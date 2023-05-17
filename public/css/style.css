@@ -1503,9 +1503,9 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .call-to-action-box {
   margin-top: -50px;
 }
-
+/* catat */
 .call-to-action-box .action-style-box {
-  background: #ffb600;
+  background:rgb(12, 61, 221);
   padding: 30px;
 }
 
