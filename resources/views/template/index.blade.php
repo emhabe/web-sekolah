@@ -1,905 +1,793 @@
-@extends('aset_lan.landing')
+@extends('layout.landing')
 @section('content')
-  <div class="body-inner">
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
 
-    <div id="top-bar" class="top-bar">
-        <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-md-8">
-                <ul class="top-info text-center text-md-left">
-                    <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">9051 Constra Incorporate, USA</p>
-                    </li>
-                </ul>
-              </div>
-              <!--/ Top info end -->
-  
-              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
-                <ul class="list-unstyled">
-                    <li>
-                      <a title="Facebook" href="https://facebbok.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
-                      </a>
-                      <a title="Twitter" href="https://twitter.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
-                      </a>
-                      <a title="Instagram" href="https://instagram.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
-                      </a>
-                      <a title="Linkdin" href="https://github.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-github"></i></span>
-                      </a>
-                    </li>
-                </ul>
-              </div>
-              <!--/ Top social end -->
-          </div>
-          <!--/ Content row end -->
-        </div>
-        <!--/ Container end -->
-    </div>
-    <!--/ Topbar end -->
-<!-- Header start -->
-<header id="header" class="header-one">
-  <div class="bg-white">
-    <div class="container">
-      <div class="logo-area">
-          <div class="row align-items-center">
-            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
-                <a class="d-block" href="index.html">
-                  <img loading="lazy" src="images/logo.png" alt="Constra">
-                </a>
-            </div><!-- logo end -->
-  
-            <div class="col-lg-9 header-right">
-                <ul class="top-info-box">
-                  <li>
-                    <div class="info-box">
-                      <div class="info-box-content">
-                          <p class="info-box-title">Call Us</p>
-                          <p class="info-box-subtitle">(+9) 847-291-4353</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="info-box">
-                      <div class="info-box-content">
-                          <p class="info-box-title">Email Us</p>
-                          <p class="info-box-subtitle">office@Constra.com</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="last">
-                    <div class="info-box last">
-                      <div class="info-box-content">
-                          <p class="info-box-title">Global Certificate</p>
-                          <p class="info-box-subtitle">ISO 9001:2017</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header-get-a-quote">
-                    <a class="btn btn-primary" href="contact.html">Get A Quote</a>
-                  </li>
-                </ul><!-- Ul end -->
-            </div><!-- header right end -->
-          </div><!-- logo area end -->
-  
-      </div><!-- Row end -->
-    </div><!-- Container end -->
-  </div>
 
-  <div class="site-navigation">
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-              <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div id="navbar-collapse" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav mr-auto">
-                      <li class="nav-item dropdown active">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li class="active"><a href="index.html">Home One</a></li>
-                            <li><a href="index-2.html">Home Two</a></li>
-                          </ul>
-                      </li>
 
-                      <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Company <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="team.html">Our People</a></li>
-                            <li><a href="testimonials.html">Testimonials</a></li>
-                            <li><a href="faq.html">Faq</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                          </ul>
-                      </li>
-              
-                      <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="projects.html">Projects All</a></li>
-                            <li><a href="projects-single.html">Projects Single</a></li>
-                          </ul>
-                      </li>
-              
-                      <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="services.html">Services All</a></li>
-                            <li><a href="service-single.html">Services Single</a></li>
-                          </ul>
-                      </li>
-              
-                      <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Features <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="404.html">404</a></li>
-                            <li class="dropdown-submenu">
-                                <a href="#!" class="dropdown-toggle" data-toggle="dropdown">Parent Menu</a>
-                                <ul class="dropdown-menu">
-                                  <li><a href="#!">Child Menu 1</a></li>
-                                  <li><a href="#!">Child Menu 2</a></li>
-                                  <li><a href="#!">Child Menu 3</a></li>
-                                </ul>
+
+
+    <!-- <div class="preloader">
+            <div class="preloader__image"></div>
+        </div> -->
+    <!-- /.preloader -->
+
+
+    <header class="main-header clearfix">
+        <div class="main-header__top">
+            <div class="main-header__top-social-box">
+                <div class="container">
+                    <div class="main-header__top-social-box-inner">
+                        <p class="main-header__top-social-text">Akreditasi Sekolah A (Industri) !</p>
+                        <div class="main-header__top-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header__top-details">
+                <div class="container">
+                    <div class="main-header__top-details-inner">
+                        <div class="main-header__logo">
+                            <a href="/"><img src="assets_landing/images/logo_utama.png" alt="" width="89"
+                                    height="88"></a>
+                        </div>
+                        <ul class="list-unstyled main-header__top-details-list">
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-message"></span>
+                                </div>
+                                <div class="text">
+                                    <h5>Kirim Email</h5>
+                                    <p><a href="mailto:smkpgri_sgs_mlg@yahoo.co.id">smkpgri_sgs_mlg@yahoo.co.id</a></p>
+                                </div>
                             </li>
-                          </ul>
-                      </li>
-              
-                      <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="news-left-sidebar.html">News Left Sidebar</a></li>
-                            <li><a href="news-right-sidebar.html">News Right Sidebar</a></li>
-                            <li><a href="news-single.html">News Single</a></li>
-                          </ul>
-                      </li>
-              
-                      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-              </nav>
-          </div>
-          <!--/ Col end -->
-        </div>
-        <!--/ Row end -->
-
-        <div class="nav-search">
-          <span id="search"><i class="fa fa-search"></i></span>
-        </div><!-- Search end -->
-
-        <div class="search-block" style="display: none;">
-          <label for="search-field" class="w-100 mb-0">
-            <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
-          </label>
-          <span class="search-close">&times;</span>
-        </div><!-- Site search end -->
-    </div>
-    <!--/ Container end -->
-
-  </div>
-  <!--/ Navigation end -->
-</header>
-<!--/ Header end -->
-
-<div class="banner-carousel banner-carousel-1 mb-0">
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg1.jpg)">
-    <div class="slider-content">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12 text-center">
-                <h2 class="slide-title" data-animation-in="slideInLeft">17 Years of excellence in</h2>
-                <h3 class="slide-sub-title" data-animation-in="slideInRight">Construction Industry</h3>
-                <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                    <a href="services.html" class="slider btn btn-primary">Our Services</a>
-                    <a href="contact.html" class="slider btn btn-primary border">Contact Now</a>
-                </p>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg2.jpg)">
-    <div class="slider-content text-left">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12">
-                <h2 class="slide-title-box" data-animation-in="slideInDown">World Class Service</h2>
-                <h3 class="slide-title" data-animation-in="fadeIn">When Service Matters</h3>
-                <h3 class="slide-sub-title" data-animation-in="slideInLeft">Your Choice is Simple</h3>
-                <p data-animation-in="slideInRight">
-                    <a href="services.html" class="slider btn btn-primary border">Our Services</a>
-                </p>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg3.jpg)">
-    <div class="slider-content text-right">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12">
-                <h2 class="slide-title" data-animation-in="slideInDown">Meet Our Engineers</h2>
-                <h3 class="slide-sub-title" data-animation-in="fadeIn">We believe sustainability</h3>
-                <p class="slider-description lead" data-animation-in="slideInRight">We will deal with your failure that determines how you achieve success.</p>
-                <div data-animation-in="slideInLeft">
-                    <a href="contact.html" class="slider btn btn-primary" aria-label="contact-with-us">Get Free Quote</a>
-                    <a href="about.html" class="slider btn btn-primary border" aria-label="learn-more-about-us">Learn more</a>
-                </div>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-<section class="call-to-action-box no-padding">
-  <div class="container">
-    <div class="action-style-box">
-        <div class="row align-items-center">
-          <div class="col-md-8 text-center text-md-left">
-              <div class="call-to-action-text">
-                <h3 class="action-title">We understand your needs on construction</h3>
-              </div>
-          </div><!-- Col end -->
-          <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
-              <div class="call-to-action-btn">
-                <a class="btn btn-dark" href="#">Request Quote</a>
-              </div>
-          </div><!-- col end -->
-        </div><!-- row end -->
-    </div><!-- Action style box -->
-  </div><!-- Container end -->
-</section><!-- Action end -->
-
-<section id="ts-features" class="ts-features">
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-6">
-          <div class="ts-intro">
-              <h2 class="into-title">About Us</h2>
-              <h3 class="into-sub-title">We deliver landmark projects</h3>
-              <p>We are rethoric question ran over her cheek When she reached the first hills of the Italic Mountains,
-                she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village
-                and the subline of her own road, the Line Lane.</p>
-          </div><!-- Intro box end -->
-
-          <div class="gap-20"></div>
-
-          <div class="row">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-trophy"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">We've Repution for Excellence</h3>
-                    </div>
-                </div><!-- Service 1 end -->
-              </div><!-- col end -->
-
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-sliders-h"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">We Build Partnerships</h3>
-                    </div>
-                </div><!-- Service 2 end -->
-              </div><!-- col end -->
-          </div><!-- Content row 1 end -->
-
-          <div class="row">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-thumbs-up"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">Guided by Commitment</h3>
-                    </div>
-                </div><!-- Service 1 end -->
-              </div><!-- col end -->
-
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas fa-users"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">A Team of Professionals</h3>
-                    </div>
-                </div><!-- Service 2 end -->
-              </div><!-- col end -->
-          </div><!-- Content row 1 end -->
-        </div><!-- Col end -->
-
-        <div class="col-lg-6 mt-4 mt-lg-0">
-          <h3 class="into-sub-title">Our Values</h3>
-          <p>Minim Austin 3 wolf moon scenester aesthetic, umami odio pariatur bitters. Pop-up occaecat taxidermy street art, tattooed beard literally.</p>
-
-          <div class="accordion accordion-group" id="our-values-accordion">
-              <div class="card">
-                <div class="card-header p-0 bg-transparent" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Safety
-                      </button>
-                    </h2>
-                </div>
-              
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#our-values-accordion">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidata
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-time"></span>
+                                </div>
+                                <div class="text">
+                                    <h5>Sen - Jum</h5>
+                                    <p>07:00 - 16:00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-phone-call"></span>
+                                </div>
+                                <div class="text">
+                                    <h5>Hubungi Kami</h5>
+                                    <p><a href="tel:(0341) 458 598">(0341) 458 598</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-location"></span>
+                                </div>
+                                <div class="text">
+                                    <h5> Jl. Morotanjek 206</h5>
+                                    <p><a href="https://goo.gl/maps/pEqgqSyR4C9ABjLN7" target="_blank">
+                                            Singosari,Kab.Malang</a></p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="card-header p-0 bg-transparent" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Customer Service
-                      </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#our-values-accordion">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidata
-                    </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header p-0 bg-transparent" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Integrity
-                      </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#our-values-accordion">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidata
-                    </div>
-                </div>
-              </div>
-          </div>
-          <!--/ Accordion end -->
-
-        </div><!-- Col end -->
-    </div><!-- Row end -->
-  </div><!-- Container end -->
-</section><!-- Feature are end -->
-
-<section id="facts" class="facts-area dark-bg">
-  <div class="container">
-    <div class="facts-wrapper">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 ts-facts">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact1.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="1789">0</span></h2>
-                <h3 class="ts-facts-title">Total Projects</h3>
-              </div>
-          </div><!-- Col end -->
-
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact2.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="647">0</span></h2>
-                <h3 class="ts-facts-title">Staff Members</h3>
-              </div>
-          </div><!-- Col end -->
-
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact3.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="4000">0</span></h2>
-                <h3 class="ts-facts-title">Hours of Work</h3>
-              </div>
-          </div><!-- Col end -->
-
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact4.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="44">0</span></h2>
-                <h3 class="ts-facts-title">Countries Experience</h3>
-              </div>
-          </div><!-- Col end -->
-
-        </div> <!-- Facts end -->
-    </div>
-    <!--/ Content row end -->
-  </div>
-  <!--/ Container end -->
-</section><!-- Facts end -->
-
-<section id="ts-service-area" class="ts-service-area pb-0">
-  <div class="container">
-    <div class="row text-center">
-        <div class="col-12">
-          <h2 class="section-title">We Are Specialists In</h2>
-          <h3 class="section-sub-title">What We Do</h3>
-        </div>
-    </div>
-    <!--/ Title row end -->
-
-    <div class="row">
-        <div class="col-lg-4">
-          <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="images/icon-image/service-icon1.png" alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Home Construction</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
-              </div>
-          </div><!-- Service 1 end -->
-
-          <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="images/icon-image/service-icon2.png" alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Building Remodels</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
-              </div>
-          </div><!-- Service 2 end -->
-
-          <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="images/icon-image/service-icon3.png"  alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Interior Design</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
-              </div>
-          </div><!-- Service 3 end -->
-
-        </div><!-- Col end -->
-
-        <div class="col-lg-4 text-center">
-          <img loading="lazy" class="img-fluid" src="images/services/service-center.jpg" alt="service-avater-image">
-        </div><!-- Col end -->
-
-        <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
-          <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="images/icon-image/service-icon4.png" alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Exterior Design</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
-              </div>
-          </div><!-- Service 4 end -->
-
-          <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="images/icon-image/service-icon5.png" alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Renovation</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
-              </div>
-          </div><!-- Service 5 end -->
-
-          <div class="ts-service-box d-flex">
-              <div class="ts-service-box-img">
-                <img loading="lazy" src="images/icon-image/service-icon6.png" alt="service-icon">
-              </div>
-              <div class="ts-service-box-info">
-                <h3 class="service-box-title"><a href="#">Safety Management</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
-              </div>
-          </div><!-- Service 6 end -->
-        </div><!-- Col end -->
-    </div><!-- Content row end -->
-
-  </div>
-  <!--/ Container end -->
-</section><!-- Service end -->
-
-<section id="project-area" class="project-area solid-bg">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-12">
-        <h2 class="section-title">Work of Excellence</h2>
-        <h3 class="section-sub-title">Recent Projects</h3>
-      </div>
-    </div>
-    <!--/ Title row end -->
-
-    <div class="row">
-      <div class="col-12">
-        <div class="shuffle-btn-group">
-          <label class="active" for="all">
-            <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">Show All
-          </label>
-          <label for="commercial">
-            <input type="radio" name="shuffle-filter" id="commercial" value="commercial">Commercial
-          </label>
-          <label for="education">
-            <input type="radio" name="shuffle-filter" id="education" value="education">Education
-          </label>
-          <label for="government">
-            <input type="radio" name="shuffle-filter" id="government" value="government">Government
-          </label>
-          <label for="infrastructure">
-            <input type="radio" name="shuffle-filter" id="infrastructure" value="infrastructure">Infrastructure
-          </label>
-          <label for="residential">
-            <input type="radio" name="shuffle-filter" id="residential" value="residential">Residential
-          </label>
-          <label for="healthcare">
-            <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">Healthcare
-          </label>
-        </div><!-- project filter end -->
-
-
-        <div class="row shuffle-wrapper">
-          <div class="col-1 shuffle-sizer"></div>
-
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project1.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project1.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">Capital Teltway Building</a>
-                  </h3>
-                  <p class="project-cat">Commercial, Interiors</p>
-                </div>
-              </div>
             </div>
-          </div><!-- shuffle item 1 end -->
-
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project2.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project2.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">Ghum Touch Hospital</a>
-                  </h3>
-                  <p class="project-cat">Healthcare</p>
-                </div>
-              </div>
-            </div>
-          </div><!-- shuffle item 2 end -->
-
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;commercial&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project3.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project3.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">TNT East Facility</a>
-                  </h3>
-                  <p class="project-cat">Government</p>
-                </div>
-              </div>
-            </div>
-          </div><!-- shuffle item 3 end -->
-
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;,&quot;infrastructure&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project4.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project4.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">Narriot Headquarters</a>
-                  </h3>
-                  <p class="project-cat">Infrastructure</p>
-                </div>
-              </div>
-            </div>
-          </div><!-- shuffle item 4 end -->
-
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;education&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project5.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project5.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">Kalas Metrorail</a>
-                  </h3>
-                  <p class="project-cat">Infrastructure</p>
-                </div>
-              </div>
-            </div>
-          </div><!-- shuffle item 5 end -->
-
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project6.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project6.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">Ancraft Avenue House</a>
-                  </h3>
-                  <p class="project-cat">Residential</p>
-                </div>
-              </div>
-            </div>
-          </div><!-- shuffle item 6 end -->
-        </div><!-- shuffle end -->
-      </div>
-
-      <div class="col-12">
-        <div class="general-btn text-center">
-          <a class="btn btn-primary" href="projects.html">View All Projects</a>
         </div>
-      </div>
-
-    </div><!-- Content row end -->
-  </div>
-  <!--/ Container end -->
-</section><!-- Project area end -->
-
-<section class="content">
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-6">
-          <h3 class="column-title">Testimonials</h3>
-
-          <div id="testimonial-slide" class="testimonial-slide">
-              <div class="item">
-                <div class="quote-item">
-                    <span class="quote-text">
-                      Question ran over her cheek When she reached the first hills of the Italic Mountains, she had a last
-                      view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the
-                      subline of her own road.
-                    </span>
-
-                    <div class="quote-item-footer">
-                      <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial1.png" alt="testimonial">
-                      <div class="quote-item-info">
-                          <h3 class="quote-author">Gabriel Denis</h3>
-                          <span class="quote-subtext">Chairman, OKT</span>
-                      </div>
+        <nav class="main-menu clearfix">
+            <div class="main-menu__wrapper clearfix">
+                <div class="container">
+                    <div class="main-menu__wrapper-inner clearfix">
+                        <div class="main-menu__left">
+                            <div class="main-menu__main-menu-box">
+                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                <ul class="main-menu__list">
+                                    <li class="current">
+                                        <a href="/">Beranda </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Tentang Kami</a>
+                                        <ul>
+                                            <li><a href="/sejarah">Sejarah Singkat</a></li>
+                                            <li><a href="/visi_misi">Visi & Misi</a></li>
+                                            <li><a href="/fasilitas">Fasilitas</a></li>
+                                            <li><a href="/tatatertib">Tata Tertib</a></li>
+                                            <li><a href="/budaya_sekolah">Budaya Sekolah </a></li>
+                                            <li><a href="/galeri_sekolah">Galeri</a></li>
+                                            <li><a href="/mitra_kerja">Mitra Kerja</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Manajemen </a>
+                                        <ul>
+                                            <li><a href="/kepala_sekolah">Kepala Sekolah</a></li>
+                                            <li><a href="/kurikulum">Kurikulum</a></li>
+                                            <li><a href="/kesiswaaan">Kesiswaan</a></li>
+                                            <li><a href="/hummas">Hummas</a></li>
+                                            <li><a href="/sarana_prasarana">Sarana Prasarana</a>
+                                            </li>
+                                            <li><a href="/tata_usaha">Tata Usaha</a></li>
+                                            <li><a href="/tenaga_pendidik">Tenaga Pendidik</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Kompetensi Keahlian</a>
+                                        <ul>
+                                            <li><a href="/teknik_otomasi_industri">Teknik Otomasi Industri</a></li>
+                                            <li><a href="/teknik_kendaraan_ringan">Teknik Kendaraan Ringan</a></li>
+                                            <li><a href="/teknik_sepeda_motor">Teknik Sepeda Motor</a></li>
+                                            <li><a href="/teknik_elekronika_industri">Teknik Elektronika Industri</a></li>
+                                            <li><a href="/teknik_komputer_jaringan">Teknik Komputer Jaringan</a></li>
+                                            <li><a href="/rekayasa_perangkat_lunak">Rekayasa Perangkat Lunak</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="current">
+                                        <a href="/bursa_kerja_khusus">Bursa Kerja Khusus</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Program </a>
+                                        <ul>
+                                            <li><a href="/organisasi">Organisasi</a></li>
+                                            <li><a href="/ekstrakulikuler">Ekstrakulikuler</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="current">
+                                        <a href="/berita_sekolah">Berita</a>
+                                    </li>
+                                    <li class="current">
+                                        <a href="/login">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-menu__right">
+                            <div class="main-menu__search-box">
+                                <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
+                            </div>
+                        </div>
                     </div>
-                </div><!-- Quote item end -->
-              </div>
-              <!--/ Item 1 end -->
+                </div>
+            </div>
+        </nav>
+    </header>
 
-              <div class="item">
-                <div class="quote-item">
-                    <span class="quote-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris
-                      nisi aliquip consequat.
-                    </span>
+    <div class="stricky-header stricked-menu main-menu">
+        <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+    </div><!-- /.stricky-header -->
 
-                    <div class="quote-item-footer">
-                      <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial2.png" alt="testimonial">
-                      <div class="quote-item-info">
-                          <h3 class="quote-author">Weldon Cash</h3>
-                          <span class="quote-subtext">CFO, First Choice</span>
-                      </div>
+    <!--Main Slider Start-->
+    <section class="main-slider-three clearfix mt-2">
+        <div class="swiper-container thm-swiper__slider"
+            data-swiper-options='{"slidesPerView": 1, "loop": true,
+            "effect": "fade",
+            "pagination": {
+            "el": "#main-slider-pagination",
+            "type": "bullets",
+            "clickable": true
+            },
+            "navigation": {
+            "nextEl": "#main-slider__swiper-button-next",
+            "prevEl": "#main-slider__swiper-button-prev"
+            },
+            "autoplay": {
+            "delay": 5000
+            }}'>
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="image-layer-three"
+                        style="background-image: url(assets_landing/images/backgrounds/main-slider-3-1.jpg);"></div>
+                    <!-- /.image-layer -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7">
+                                <div class="main-slider-three__content">
+                                    <h4 class="main-slider-three__title"><span class="mencoba">Selamat Datang </span><br><div class="mencoba2">Dihalaman resmi</div> SMK PGRI <span>Singosari</span>
+                                        <br>
+                                    </h4>
+                                    <p class="main-slider-three__text">Selamat datang di website sekolah kami! Bersama-sama, mari menjelajahi dunia pengetahuan dan membangun masa depan yang gemilang. <br> </p>
+                                    <div class="main-slider-three__btn-box">
+                                        <a href="about.html" class="thm-btn main-slider-three__btn">Discover more <i
+                                                class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div><!-- Quote item end -->
-              </div>
-              <!--/ Item 2 end -->
-
-              <div class="item">
-                <div class="quote-item">
-                    <span class="quote-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris
-                      nisi ut commodo consequat.
-                    </span>
-
-                    <div class="quote-item-footer">
-                      <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial3.png" alt="testimonial">
-                      <div class="quote-item-info">
-                          <h3 class="quote-author">Minter Puchan</h3>
-                          <span class="quote-subtext">Director, AKT</span>
-                      </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-layer-three"
+                        style="background-image: url(assets_landing/images/backgrounds/main-slider-3-2.jpg);"></div>
+                    <!-- /.image-layer -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7">
+                                <div class="main-slider-three__content">
+                                    <h2 class="main-slider-three__title">We’re here <br> to <span>clean</span> your
+                                        <br> home
+                                    </h2>
+                                    <p class="main-slider-three__text">There are many variations of passages of
+                                        Lorem Ipsum available, but <br> the majority have suffered alteration.</p>
+                                    <div class="main-slider-three__btn-box">
+                                        <a href="about.html" class="thm-btn main-slider-three__btn">Discover more <i
+                                                class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div><!-- Quote item end -->
-              </div>
-              <!--/ Item 3 end -->
-
-          </div>
-          <!--/ Testimonial carousel end-->
-        </div><!-- Col end -->
-
-        <div class="col-lg-6 mt-5 mt-lg-0">
-
-          <h3 class="column-title">Happy Clients</h3>
-
-          <div class="row all-clients">
-              <div class="col-sm-4 col-6">
-                <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client1.png" alt="clients-logo" /></a>
-                </figure>
-              </div><!-- Client 1 end -->
-
-              <div class="col-sm-4 col-6">
-                <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client2.png" alt="clients-logo" /></a>
-                </figure>
-              </div><!-- Client 2 end -->
-
-              <div class="col-sm-4 col-6">
-                <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client3.png" alt="clients-logo" /></a>
-                </figure>
-              </div><!-- Client 3 end -->
-
-              <div class="col-sm-4 col-6">
-                <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client4.png" alt="clients-logo" /></a>
-                </figure>
-              </div><!-- Client 4 end -->
-
-              <div class="col-sm-4 col-6">
-                <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client5.png" alt="clients-logo" /></a>
-                </figure>
-              </div><!-- Client 5 end -->
-
-              <div class="col-sm-4 col-6">
-                <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client6.png" alt="clients-logo" /></a>
-                </figure>
-              </div><!-- Client 6 end -->
-
-          </div><!-- Clients row end -->
-
-        </div><!-- Col end -->
-
-    </div>
-    <!--/ Content row end -->
-  </div>
-  <!--/ Container end -->
-</section><!-- Content end -->
-
-<section class="subscribe no-padding">
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-4">
-          <div class="subscribe-call-to-acton">
-              <h3>Can We Help?</h3>
-              <h4>(+9) 847-291-4353</h4>
-          </div>
-        </div><!-- Col end -->
-
-        <div class="col-lg-8">
-          <div class="ts-newsletter row align-items-center">
-              <div class="col-md-5 newsletter-introtext">
-                <h4 class="text-white mb-0">Newsletter Sign-up</h4>
-                <p class="text-white">Latest updates and news</p>
-              </div>
-
-              <div class="col-md-7 newsletter-form">
-                <form action="#" method="post">
-                    <div class="form-group">
-                      <label for="newsletter-email" class="content-hidden">Newsletter Email</label>
-                      <input type="email" name="email" id="newsletter-email" class="form-control form-control-lg" placeholder="Your your email and hit enter" autocomplete="off">
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-layer-three"
+                        style="background-image: url(assets_landing/images/backgrounds/main-slider-3-3.jpg);"></div>
+                    <!-- /.image-layer -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7">
+                                <div class="main-slider-three__content">
+                                    <h2 class="main-slider-three__title">We’re here <br> to <span>clean</span> your
+                                        <br> home
+                                    </h2>
+                                    <p class="main-slider-three__text">There are many variations of passages of
+                                        Lorem Ipsum available, but <br> the majority have suffered alteration.</p>
+                                    <div class="main-slider-three__btn-box">
+                                        <a href="about.html" class="thm-btn main-slider-three__btn">Discover more <i
+                                                class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </form>
-              </div>
-          </div><!-- Newsletter end -->
-        </div><!-- Col end -->
+                </div>
+            </div>
 
-    </div><!-- Content row end -->
-  </div>
-  <!--/ Container end -->
-</section>
-<!--/ subscribe end -->
+            <!-- If we need navigation buttons -->
+            <div class="main-slider__nav">
+                <div class="swiper-button-prev" id="main-slider__swiper-button-next">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="swiper-button-next" id="main-slider__swiper-button-prev">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
 
-<section id="news" class="news">
-  <div class="container">
-    <div class="row text-center">
-        <div class="col-12">
-          <h2 class="section-title">Work of Excellence</h2>
-          <h3 class="section-sub-title">Recent Projects</h3>
         </div>
-    </div>
-    <!--/ Title row end -->
+    </section>
 
-    <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="latest-post">
-              <div class="latest-post-media">
-                <a href="news-single.html" class="latest-post-img">
-                    <img loading="lazy" class="img-fluid" src="images/news/news1.jpg" alt="img">
-                </a>
-              </div>
-              <div class="post-body">
-                <h4 class="post-title">
-                    <a href="news-single.html" class="d-inline-block">We Just Completes $17.6 million Medical Clinic in Mid-Missouri</a>
-                </h4>
-                <div class="latest-post-meta">
-                    <span class="post-item-date">
-                      <i class="fa fa-clock-o"></i> July 20, 2017
-                    </span>
+    <!--Welcome One Start-->
+    <section class="why-choose-two">
+        <div class="why-choose-two-bubble float-bob-x">
+            <img src="assets_landing/images/shapes/why-choose-two-bubble.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="why-choose-two__left">
+                        <div class="why-choose-two__img-box wow slideInLeft" data-wow-delay="100ms"
+                            data-wow-duration="2500ms">
+                            <div class="why-choose-two__img-1">
+                                <img src="assets_landing/images/resources/why-choose-two-img-1.jpg" alt="">
+                            </div>
+                            <div class="why-choose-two__img-2">
+                                <img src="assets_landing/images/resources/why-choose-two-img-2.jpg" alt="">
+                            </div>
+                            <div class="why-choose-two__dot">
+                                <img src="assets_landing/images/shapes/why-choose-two-dot.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-          </div><!-- Latest post end -->
-        </div><!-- 1st post col end -->
+                <div class="col-xl-6">
+                    <div class="why-choose-two__right">
+                        <div class="section-title text-left">
+                            <span class="section-title__tagline">Sambutan </span>
+                            <h2 class="section-title__title">Kepala Sekolah</h2>
+                        </div>
+                        <p class="why-choose-two__text">Selamat datang di website SMK PGRI Singosari yang saya tujukan
+                            untuk seluruh unsur pimpinan, guru, karyawan dan siswa serta khalayak umum guna dapat mengakses
+                            seluruh informasi tentang sekolah kami. Di era digital saat ini, website sekolah merupakan pintu
+                            gerbang informasi terdepan sebagai sarana untuk menyebarluaskan berbagai publikasii terkait
+                            kemajuan pendidikan dan pencapaian SMK PGRI Singosari terkini.
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="latest-post">
-              <div class="latest-post-media">
-                <a href="news-single.html" class="latest-post-img">
-                    <img loading="lazy" class="img-fluid" src="images/news/news2.jpg" alt="img">
-                </a>
-              </div>
-              <div class="post-body">
-                <h4 class="post-title">
-                    <a href="news-single.html" class="d-inline-block">Thandler Airport Water Reclamation Facility Expansion Project Named</a>
-                </h4>
-                <div class="latest-post-meta">
-                    <span class="post-item-date">
-                      <i class="fa fa-clock-o"></i> June 17, 2017
-                    </span>
+                            Saya berharap Website ini dapat dijadikan wahana interaksi yang positif baik untuk semua
+                            penggunanya, sehingga dapat menjalin silaturahmi yang erat disegala unsur. Kami menyadari bahwa
+                            wesbite ini masih memiliki banyak kekurangan,oleh karena itu kepada seluruh civitas akademika
+                            dan masyarakat umum dapat memberikan saran dan kritik demi kemajuan lebih lanjut.</p>
+                        <p class="welcome-one__text-1">Ardianto,S.ST</p>
+                    </div>
                 </div>
-              </div>
-          </div><!-- Latest post end -->
-        </div><!-- 2nd post col end -->
+            </div>
+        </div>
+    </section>
+    <!--Welcome One End-->
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="latest-post">
-              <div class="latest-post-media">
-                <a href="news-single.html" class="latest-post-img">
-                    <img loading="lazy" class="img-fluid" src="images/news/news3.jpg" alt="img">
-                </a>
-              </div>
-              <div class="post-body">
-                <h4 class="post-title">
-                    <a href="news-single.html" class="d-inline-block">Silicon Bench and Cornike Begin Construction Solar Facilities</a>
-                </h4>
-                <div class="latest-post-meta">
-                    <span class="post-item-date">
-                      <i class="fa fa-clock-o"></i> Aug 13, 2017
-                    </span>
+    <!--Services One Start-->
+    <section class="welcome-one">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="section-title__tagline">Kompetensi Keahlian</span>
+                <h2 class="section-title__title mb-2">Kompetensi Keahlian</h2>
+            </div>
+
+            <div class="row">
+                <!--Services One Single Start-->
+                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="services-one__single">
+                        <div class="services-one__single-top-bubble"
+                            style="background-image: url(assets_landing/images/shapes/services-one-single-top-bubble.png);">
+                        </div>
+                        <div class="services-one__icon">
+                            <span class=""><img src="assets_landing/images/toi.gif" alt="" class="src"
+                                    width="90" height="90"></span>
+                        </div>
+                        <div class="services-one__single-inner">
+                            <div class="services-one__title-box">
+                                <h5 class="services-one__title"><a href="plumbing-services.html">Teknik Otomasi
+                                        Industri</a>
+                                </h5>
+                            </div>
+                            <div class="services-one__text-box">
+                                <p class="services-one__text">Program keahlian yang mempersiapkan siswa menjadi tenaga
+                                    terampil
+                                    di bidang teknik otomasi industri dan pemograman PLC</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-          </div><!-- Latest post end -->
-        </div><!-- 3rd post col end -->
-    </div>
-    <!--/ Content row end -->
+                <!--Services One Single End-->
+                <!--Services One Single Start-->
+                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="services-one__single">
+                        <div class="services-one__single-top-bubble"
+                            style="background-image: url(assets_landing/images/shapes/services-one-single-top-bubble.png);">
+                        </div>
+                        <div class="services-one__icon">
+                            <span class=""><img src="assets_landing/images/tkr.gif" alt="" class="src"
+                                    width="60" height="60"></span>
+                        </div>
+                        <div class="services-one__single-inner">
+                            <div class="services-one__title-box">
+                                <h5 class="services-one__title"><a href="laundry-services.html">Teknik Kendaraan
+                                        Ringan</a>
+                                </h5>
+                            </div>
+                            <div class="services-one__text-box">
+                                <p class="services-one__text">Program keahlian yang mempersiapkan siswa menjadi tenaga
+                                    terampil di bidang perbaikan kendaraan ringan (otomotif)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Services One Single End-->
+                <!--Services One Single Start-->
+                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="services-one__single">
+                        <div class="services-one__single-top-bubble"
+                            style="background-image: url(assets_landing/images/shapes/services-one-single-top-bubble.png);">
+                        </div>
+                        <div class="services-one__icon">
+                            <span class=""><img src="assets_landing/images/tsm.gif" alt="" class="src"
+                                    width="70" height="70"></span>
+                        </div>
+                        <div class="services-one__single-inner">
+                            <div class="services-one__title-box">
+                                <h5 class="services-one__title"><a href="kitchen-cleaning.html">Teknik Sepeda Motor</a>
+                                </h5>
+                            </div>
+                            <div class="services-one__text-box">
+                                <p class="services-one__text">Program keahlian yang mempersiapkan siswa menjadi tenaga
+                                    terampil di bidang perbaikan dan perawatan sepeda motor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="services-one__single">
+                        <div class="services-one__single-top-bubble"
+                            style="background-image: url(assets_landing/images/shapes/services-one-single-top-bubble.png);">
+                        </div>
+                        <div class="services-one__icon">
+                            <span class=""><img src="assets_landing/images/tei.gif" alt="" class="src"
+                                    width="90" height="90"></span>
+                        </div>
+                        <div class="services-one__single-inner">
+                            <div class="services-one__title-box">
+                                <h5 class="services-one__title"><a href="office-cleaning.html">Teknik Elektronika
+                                        Industri</a>
+                                </h5>
+                            </div>
+                            <div class="services-one__text-box">
+                                <p class="services-one__text">Program keahlian yang mempersiapkan siswa menjadi tenaga
+                                    terampil di bidang dalam rangkaian elektronika</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Services One Single End-->
+                <!--Services One Single Start-->
+                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="services-one__single">
+                        <div class="services-one__single-top-bubble"
+                            style="background-image: url(assets_landing/images/shapes/services-one-single-top-bubble.png);">
+                        </div>
+                        <div class="services-one__icon">
+                            <span class=""><img src="assets_landing/images/tkj.gif" alt="" class="src"
+                                    width="90" height="90"></span>
+                        </div>
+                        <div class="services-one__single-inner">
+                            <div class="services-one__title-box">
+                                <h5 class="services-one__title"><a href="window-cleaning.html">Teknik Komputer
+                                        Jaringan</a>
+                                </h5>
+                            </div>
+                            <div class="services-one__text-box">
+                                <p class="services-one__text">Program keahlian yang mempersiapkan siswa menjadi tenaga
+                                    terampil di bidang teknik komputer jaringan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Services One Single End-->
+                <!--Services One Single Start-->
+                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay="600ms">
+                    <div class="services-one__single">
+                        <div class="services-one__single-top-bubble"
+                            style="background-image: url(assets_landing/images/shapes/services-one-single-top-bubble.png);">
+                        </div>
+                        <div class="services-one__icon">
+                            <span class=""><img src="assets_landing/images/rpl.gif" alt="" class="src"
+                                    width="90" height="90"></span>
+                        </div>
+                        <div class="services-one__single-inner">
+                            <div class="services-one__title-box">
+                                <h5 class="services-one__title"><a href="toilet-cleaning.html">Rekayasa Perangkat
+                                        Lunak</a>
+                                </h5>
+                            </div>
+                            <div class="services-one__text-box">
+                                <p class="services-one__text">Program keahlian yang mempersiapkan siswa menjadi tenaga
+                                    terampil di bidang pemrogaman software.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Services One Single End-->
+            </div>
 
-    <div class="general-btn text-center mt-4">
-        <a class="btn btn-primary" href="news-left-sidebar.html">See All Posts</a>
-    </div>
+        </div>
+    </section>
+    <!--Services One End-->
 
-  </div>
-  <!--/ Container end -->
-</section>
-<!--/ News end -->
+    <!--Counter One Start-->
+    <section class="counter-one">
+        <div class="container">
+            <div class="counter-one__inner wow fadeInUp" data-wow-delay="100ms">
+                <div class="counter-one-bg-1"
+                    style="background-image: url(assets_landing/images/backgrounds/counter-one-bg-1.png);"></div>
+                <div class="counter-one-bg-2"
+                    style="background-image: url(assets_landing/images/backgrounds/counter-one-bg-2.png);"></div>
+                <ul class="list-unstyled counter-one__list">
+                    <li>
+                        <div class="counter-one__icon">
+                            <span class=""><i class="fa-solid fa-city"></i></span>
+
+                        </div>
+                        <div class="counter-one__count-box">
+                            <div class="counter-one__count-box-inner">
+                                <h3 class="odometer" data-count="2562">00</h3>
+                                <span class="counter-one__plus">+</span>
+                            </div>
+                            <p class="counter-one__text">Mitra Sekolah</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="counter-one__icon">
+                            <span class=""><i class="fa-solid fa-person-chalkboard"></i></span>
+                        </div>
+                        <div class="counter-one__count-box">
+                            <div class="counter-one__count-box-inner">
+                                <h3 class="odometer" data-count="562">00</h3>
+                                <span class="counter-one__plus">+</span>
+                            </div>
+                            <p class="counter-one__text">Staf dan Pengajar</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="counter-one__icon">
+                            <span class=""><i class="fa-solid fa-trophy"></i></span>
+                        </div>
+                        <div class="counter-one__count-box">
+                            <div class="counter-one__count-box-inner">
+                                <h3 class="odometer" data-count="33">00</h3>
+                                <span class="counter-one__plus">+</span>
+                            </div>
+                            <p class="counter-one__text">Winning Award</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="counter-one__icon">
+                            <span class=""><i class="fa-solid fa-chalkboard-user"></i>
+                            </span>
+                        </div>
+                        <div class="counter-one__count-box">
+                            <div class="counter-one__count-box-inner">
+                                <h3 class="odometer" data-count="552">00</h3>
+                                <span class="counter-one__plus">+</span>
+                            </div>
+                            <p class="counter-one__text">Jumlah Siswa Aktif</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Counter One End-->
+    <section class="blog-page">
+        <div class="container">
+            <div class="section-title text-left">
+                <span class="section-title__tagline">Berita Terbaru SMK PGRI Singosari</span>
+                <h2 class="section-title__title">Berita Terbaru <br> </h2>
+            </div>
+            <div class="row">
+                <!--Blog Page Single Start-->
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="blog-one__single">
+                        <div class="blog-one__img">
+                            <img src="assets_landing/images/blog/blog-1-1.jpg" alt="">
+                            <a href="blog-details.html">
+                                <span class="blog-one__plus"></span>
+                            </a>
+                            <div class="blog-one__date">
+                                <p>25 <br> <span>Mar</span></p>
+                            </div>
+                        </div>
+                        <div class="blog-one__content">
+                            <ul class="list-unstyled blog-one__meta">
+                                <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
+                                </li>
+                                <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
+                                </li>
+                            </ul>
+                            <h3 class="blog-one__title"><a href="blog-details.html">Simple cleaning tips you can use
+                                    everyday</a></h3>
+                            <div class="blog-one__btn-box">
+                                <a href="blog-details.html">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <div class="blog-one__tag">
+                                <p>Plumber</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Blog Page Single End-->
+                <!--Blog Page Single Start-->
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="blog-one__single">
+                        <div class="blog-one__img">
+                            <img src="assets_landing/images/blog/blog-1-2.jpg" alt="">
+                            <a href="blog-details.html">
+                                <span class="blog-one__plus"></span>
+                            </a>
+                            <div class="blog-one__date">
+                                <p>25 <br> <span>Mar</span></p>
+                            </div>
+                        </div>
+                        <div class="blog-one__content">
+                            <ul class="list-unstyled blog-one__meta">
+                                <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
+                                </li>
+                                <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
+                                </li>
+                            </ul>
+                            <h3 class="blog-one__title"><a href="blog-details.html">Make your home cleaner than it's
+                                    ever been</a></h3>
+                            <div class="blog-one__btn-box">
+                                <a href="blog-details.html">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <div class="blog-one__tag">
+                                <p>Kitchen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Blog Page Single End-->
+                <!--Blog Page Single Start-->
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="blog-one__single">
+                        <div class="blog-one__img">
+                            <img src="assets_landing/images/blog/blog-1-3.jpg" alt="">
+                            <a href="blog-details.html">
+                                <span class="blog-one__plus"></span>
+                            </a>
+                            <div class="blog-one__date">
+                                <p>25 <br> <span>Mar</span></p>
+                            </div>
+                        </div>
+                        <div class="blog-one__content">
+                            <ul class="list-unstyled blog-one__meta">
+                                <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
+                                </li>
+                                <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
+                                </li>
+                            </ul>
+                            <h3 class="blog-one__title"><a href="blog-details.html">My secret to cleaning east &
+                                    effectively!</a></h3>
+                            <div class="blog-one__btn-box">
+                                <a href="blog-details.html">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <div class="blog-one__tag">
+                                <p>Kitchen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Blog Page Single End-->
+            </div>
+            <a href="about.html" class="thm-btn main-slider-three__btn">Lainya... <i class="fa fa-angle-right"></i></a>
+        </div>
+    </section>
+    <section class="blog-page">
+        <div class="container">
+            <div class="section-title text-left">
+                <span class="section-title__tagline">Berita Bursa Kerja Khusus</span>
+                <h2 class="section-title__title">Bursa Kerja Khusus <br> </h2>
+            </div>
+            <div class="row">
+                <!--Blog Page Single Start-->
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="blog-one__single">
+                        <div class="blog-one__img">
+                            <img src="assets_landing/images/blog/blog-1-1.jpg" alt="">
+                            <a href="blog-details.html">
+                                <span class="blog-one__plus"></span>
+                            </a>
+                            <div class="blog-one__date">
+                                <p>25 <br> <span>Mar</span></p>
+                            </div>
+                        </div>
+                        <div class="blog-one__content">
+                            <ul class="list-unstyled blog-one__meta">
+                                <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
+                                </li>
+                                <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
+                                </li>
+                            </ul>
+                            <h3 class="blog-one__title"><a href="blog-details.html">Simple cleaning tips you can use
+                                    everyday</a></h3>
+                            <div class="blog-one__btn-box">
+                                <a href="blog-details.html">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <div class="blog-one__tag">
+                                <p>Plumber</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Blog Page Single End-->
+                <!--Blog Page Single Start-->
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="blog-one__single">
+                        <div class="blog-one__img">
+                            <img src="assets_landing/images/blog/blog-1-2.jpg" alt="">
+                            <a href="blog-details.html">
+                                <span class="blog-one__plus"></span>
+                            </a>
+                            <div class="blog-one__date">
+                                <p>25 <br> <span>Mar</span></p>
+                            </div>
+                        </div>
+                        <div class="blog-one__content">
+                            <ul class="list-unstyled blog-one__meta">
+                                <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
+                                </li>
+                                <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
+                                </li>
+                            </ul>
+                            <h3 class="blog-one__title"><a href="blog-details.html">Make your home cleaner than it's
+                                    ever been</a></h3>
+                            <div class="blog-one__btn-box">
+                                <a href="blog-details.html">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <div class="blog-one__tag">
+                                <p>Kitchen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Blog Page Single End-->
+                <!--Blog Page Single Start-->
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="blog-one__single">
+                        <div class="blog-one__img">
+                            <img src="assets_landing/images/blog/blog-1-3.jpg" alt="">
+                            <a href="blog-details.html">
+                                <span class="blog-one__plus"></span>
+                            </a>
+                            <div class="blog-one__date">
+                                <p>25 <br> <span>Mar</span></p>
+                            </div>
+                        </div>
+                        <div class="blog-one__content">
+                            <ul class="list-unstyled blog-one__meta">
+                                <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
+                                </li>
+                                <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
+                                </li>
+                            </ul>
+                            <h3 class="blog-one__title"><a href="blog-details.html">My secret to cleaning east &
+                                    effectively!</a></h3>
+                            <div class="blog-one__btn-box">
+                                <a href="blog-details.html">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <div class="blog-one__tag">
+                                <p>Kitchen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Blog Page Single End-->
+            </div>
+            <a href="about.html" class="thm-btn main-slider-three__btn">Lainya... <i class="fa fa-angle-right"></i></a>
+        </div>
+    </section>
+
+    <!--Google Map Start-->
+    <section class="google-map">
+        <iframe
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=SMK pgri singosari&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            class="google-map__one" allowfullscreen></iframe>
+    </section>
+    <!--Google Map End-->
+
+    <!--Information Start-->
+    <section class="information">
+        <div class="container">
+            <div class="information__inner">
+                <div class="information__logo-box">
+                    <div class="information__border-1"></div>
+                    <div class="information__border-2"></div>
+                    <a href="index.html"><img src="assets_landing/images/logo_utama.png" alt="" width="100"
+                            height="100"></a>
+                </div>
+                <ul class="list-unstyled information__list">
+                    <li>
+                        <div class="information__icon">
+                            <span class="icon-phone"></span>
+                        </div>
+                        <div class="information__content">
+                            <p class="information__sub-title">Hubungi Kami</p>
+                            <h6 class="information__number">
+                                <a href="tel:(0341) 458 598">(0341) 458 598</a>
+                            </h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information__icon">
+                            <span class="icon-envelope"></span>
+                        </div>
+                        <div class="information__content">
+                            <p class="information__sub-title">Kirim Email</p>
+                            <h6 class="information__number">
+                                <a href="mailto:smkpgri_sgs_mlg@yahoo.co.id">SMK PGRI Singosari</a>
+                            </h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information__icon">
+                            <span class="icon-location-1"></span>
+                        </div>
+                        <div class="information__content">
+                            <p class="information__sub-title">Alamat</p>
+                            <h6 class="information__number">Jl. Morotanjek 206,<br>Singosari,Malang</h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Information End-->
 @endsection
