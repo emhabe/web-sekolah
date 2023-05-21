@@ -56,6 +56,62 @@
 <div class="page-wrapper">
 
     @yield('content')
+    
+    <!--Google Map Start-->
+    <section class="google-map">
+        <iframe
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=SMK pgri singosari&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            class="google-map__one" allowfullscreen></iframe>
+    </section>
+    <!--Google Map End-->
+
+    <!--Information Start-->
+    <section class="information">
+        <div class="container">
+            <div class="information__inner">
+                <div class="information__logo-box">
+                    <div class="information__border-1"></div>
+                    <div class="information__border-2"></div>
+                    <a href="index.html"><img src="assets_landing/images/logo_utama.png" alt="" width="100"
+                            height="100"></a>
+                </div>
+                <ul class="list-unstyled information__list">
+                    <li>
+                        <div class="information__icon">
+                            <span class="icon-phone"></span>
+                        </div>
+                        <div class="information__content">
+                            <p class="information__sub-title">Hubungi Kami</p>
+                            <h6 class="information__number">
+                                <a href="tel:(0341) 458 598">(0341) 458 598</a>
+                            </h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information__icon">
+                            <span class="icon-envelope"></span>
+                        </div>
+                        <div class="information__content">
+                            <p class="information__sub-title">Kirim Email</p>
+                            <h6 class="information__number">
+                                <a href="mailto:smkpgri_sgs_mlg@yahoo.co.id">SMK PGRI Singosari</a>
+                            </h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="information__icon">
+                            <span class="icon-location-1"></span>
+                        </div>
+                        <div class="information__content">
+                            <p class="information__sub-title">Alamat</p>
+                            <h6 class="information__number">Jl. Morotanjek 206,<br>Singosari,Malang</h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Information End-->
     <footer class="site-footer">
         <div class="site-footer-shape-1" style="background-image: url(assets_landing/images/shapes/site-footer-shape-1.png);">
         </div>
@@ -80,7 +136,7 @@
                             <div class="site-footer__social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>

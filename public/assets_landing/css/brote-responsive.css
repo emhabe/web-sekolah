@@ -1166,9 +1166,14 @@
     }
 
     .page-header-bg {
-        display: none;
+        max-width: 100%;
+        height: auto;
     }
-
+    .blog-details{
+        position: relative;
+        display: block;
+        padding: 0px 0 70px;
+    }
     .page-header__inner h2 {
         font-size: 27px;
         line-height: 37px;

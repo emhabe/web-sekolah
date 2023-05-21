@@ -106,7 +106,7 @@
                                         <ul>
                                             <li><a href="/kepala_sekolah">Kepala Sekolah</a></li>
                                             <li><a href="/kurikulum">Kurikulum</a></li>
-                                            <li><a href="/kesiswaaan">Kesiswaan</a></li>
+                                            <li><a href="/kesiswaan">Kesiswaan</a></li>
                                             <li><a href="/hummas">Hummas</a></li>
                                             <li><a href="/sarana_prasarana">Sarana Prasarana</a>
                                             </li>
@@ -125,7 +125,7 @@
                                             <li><a href="/rekayasa_perangkat_lunak">Rekayasa Perangkat Lunak</a></li>
                                         </ul>
                                     </li>
-                                    <li class="current">
+                                    <li>
                                         <a href="/bursa_kerja_khusus">Bursa Kerja Khusus</a>
                                     </li>
                                     <li class="dropdown">
@@ -135,10 +135,10 @@
                                             <li><a href="/ekstrakulikuler">Ekstrakulikuler</a></li>
                                         </ul>
                                     </li>
-                                    <li class="current">
+                                    <li>
                                         <a href="/berita_sekolah">Berita</a>
                                     </li>
-                                    <li class="current">
+                                    <li>
                                         <a href="/login">Login</a>
                                     </li>
                                 </ul>
@@ -190,10 +190,6 @@
                                         <br>
                                     </h4>
                                     <p class="main-slider-three__text">Selamat datang di website sekolah kami! Bersama-sama, mari menjelajahi dunia pengetahuan dan membangun masa depan yang gemilang. <br> </p>
-                                    <div class="main-slider-three__btn-box">
-                                        <a href="about.html" class="thm-btn main-slider-three__btn">Discover more <i
-                                                class="fa fa-angle-right"></i></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -537,7 +533,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="blog-one__single">
                         <div class="blog-one__img">
-                            <img src="assets_landing/images/blog/blog-1-1.jpg" alt="">
+                            <img src="assets_landing/images/gambar1.jpg" alt="">
                             <a href="blog-details.html">
                                 <span class="blog-one__plus"></span>
                             </a>
@@ -568,7 +564,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                     <div class="blog-one__single">
                         <div class="blog-one__img">
-                            <img src="assets_landing/images/blog/blog-1-2.jpg" alt="">
+                            <img src="assets_landing/images/tes.png" alt="">
                             <a href="blog-details.html">
                                 <span class="blog-one__plus"></span>
                             </a>
@@ -734,60 +730,4 @@
             <a href="about.html" class="thm-btn main-slider-three__btn">Lainya... <i class="fa fa-angle-right"></i></a>
         </div>
     </section>
-
-    <!--Google Map Start-->
-    <section class="google-map">
-        <iframe
-            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=SMK pgri singosari&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            class="google-map__one" allowfullscreen></iframe>
-    </section>
-    <!--Google Map End-->
-
-    <!--Information Start-->
-    <section class="information">
-        <div class="container">
-            <div class="information__inner">
-                <div class="information__logo-box">
-                    <div class="information__border-1"></div>
-                    <div class="information__border-2"></div>
-                    <a href="index.html"><img src="assets_landing/images/logo_utama.png" alt="" width="100"
-                            height="100"></a>
-                </div>
-                <ul class="list-unstyled information__list">
-                    <li>
-                        <div class="information__icon">
-                            <span class="icon-phone"></span>
-                        </div>
-                        <div class="information__content">
-                            <p class="information__sub-title">Hubungi Kami</p>
-                            <h6 class="information__number">
-                                <a href="tel:(0341) 458 598">(0341) 458 598</a>
-                            </h6>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="information__icon">
-                            <span class="icon-envelope"></span>
-                        </div>
-                        <div class="information__content">
-                            <p class="information__sub-title">Kirim Email</p>
-                            <h6 class="information__number">
-                                <a href="mailto:smkpgri_sgs_mlg@yahoo.co.id">SMK PGRI Singosari</a>
-                            </h6>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="information__icon">
-                            <span class="icon-location-1"></span>
-                        </div>
-                        <div class="information__content">
-                            <p class="information__sub-title">Alamat</p>
-                            <h6 class="information__number">Jl. Morotanjek 206,<br>Singosari,Malang</h6>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!--Information End-->
 @endsection
