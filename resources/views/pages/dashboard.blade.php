@@ -49,7 +49,7 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="/dashboard">
+          <a class="nav-link active " href="/dashboard">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
             </div>
@@ -65,19 +65,51 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="../pages/billing.html">
+          <a class="nav-link " href="/bkk">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Billing</span>
+            <span class="nav-link-text ms-1">BKK</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.creative-tim.com/learning-lab/bootstrap/alerts/argon-dashboard">
+          <a class="nav-link  " href="/manajemen">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-dark text-sm"></i>
             </div>
-            <span class="nav-link-text ms-1">Components</span>
+            <span class="nav-link-text ms-1">Manajemen</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/jurusan">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
+            </div>
+            <span class="nav-link-text ms-1">Jurusan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/berita">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
+            </div>
+            <span class="nav-link-text ms-1">Berita</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/budaya_sekolah">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
+            </div>
+            <span class="nav-link-text ms-1">Budaya Sekolah</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/data_master">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
+            </div>
+            <span class="nav-link-text ms-1">Data Master</span>
           </a>
         </li>
         <li class="nav-item mt-3">
@@ -109,7 +141,6 @@
         </li>
       </ul>
     </div>
-   
   </aside>
   <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->

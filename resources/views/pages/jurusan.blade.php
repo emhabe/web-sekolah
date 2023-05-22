@@ -20,6 +20,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
+
   <title>
     Argon Dashboard 2 by Creative Tim
   </title>
@@ -65,7 +67,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active " href="/bkk">
+          <a class="nav-link " href="/bkk">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
@@ -81,7 +83,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/jurusan">
+          <a class="nav-link active" href="/jurusan">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-dark text-sm"></i>
             </div>
@@ -149,9 +151,9 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-white active" aria-current="page">BKK</li>
+            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Jurusan</li>
           </ol>
-          <h6 class="font-weight-bolder text-white mb-0">BKK</h6>
+          <h6 class="font-weight-bolder text-white mb-0">Jurusan</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -182,152 +184,182 @@
     <!-- End Navbar -->
     <div class="container-fluid py-4">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-          <div class="col-xl-12">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="card">
-                    <div class="card-header mx-4 p-3 text-center">
-                      <div class="icon icon-shape icon-lg bg-gradient-primary shadow text-center border-radius-lg">
-                        <i class="fas fa-landmark opacity-10"></i>
-                      </div>
-                    </div>
-                    <div class="card-body pt-0 p-3 text-center">
-                      <h6 class="text-center mb-0">BKK</h6>
-                      <span class="text-xs">Belong Interactive</span>
-                      <hr class="horizontal dark my-3">
-                      <a href="/detail_bkk" type="button" class="btn bg-gradient-primary">Lihat</a>
-                      <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn bg-gradient-info">Kategori</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mt-md-0 mt-4">
-                  <div class="card">
-                    <div class="card-header mx-4 p-3 text-center">
-                      <div class="icon icon-shape icon-lg bg-gradient-primary shadow text-center border-radius-lg">
-                        <i class="fab fa-paypal opacity-10"></i>
-                      </div>
-                    </div>
-                    <div class="card-body pt-0 p-3 text-center">
-                      <h6 class="text-center mb-0">Mitra</h6>
-                      <span class="text-xs">Freelance Payment</span>
-                      <hr class="horizontal dark my-3">
-                      <a href="/detail_mitra" type="button" class="btn bg-gradient-primary">Lihat</a>
-                      <button data-bs-toggle="modal" data-bs-target="#exampleModal1" type="button" class="btn bg-gradient-info">Kategori</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
+        <div class="row mt-2">
+        <div class="row mt-2">
+<div class="col-12">
+<div class="card mb-4">
+<div class="card-header pb-0 p-3">
+<h6 class="mb-1">Jurusan</h6>
+</div>
+<div class="card-body p-3">
+<div class="row">
+<div class="col-xl-4 col-md-6 mb-xl-0 mb-4">
+<div class="card card-blog card-plain">
+<div class="position-relative">
+<a class="d-block shadow-xl border-radius-xl">
+<img src="../../../assets/img/home-decor-3.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+</a>
+</div>
+<div class="card-body px-1 pb-0">
+
+<a href="javascript:;">
+<h5>
+TEI
+</h5>
+</a>
+<p class="mb-4 text-sm">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, nam?
+</p>
+<div class="d-flex align-items-center justify-content-between">
+<button type="button" class="btn btn-outline-primary btn-sm mb-0">Lihat</button>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-md-6 mb-xl-0 mb-4">
+<div class="card card-blog card-plain">
+<div class="position-relative">
+<a class="d-block shadow-xl border-radius-xl">
+<img src="../../../assets/img/home-decor-3.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+</a>
+</div>
+<div class="card-body px-1 pb-0">
+
+<a href="javascript:;">
+<h5>
+TEI
+</h5>
+</a>
+<p class="mb-4 text-sm">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, nam?
+</p>
+<div class="d-flex align-items-center justify-content-between">
+<button type="button" class="btn btn-outline-primary btn-sm mb-0">Lihat</button>
+
+</div>
+</div>
+</div>
+</div><div class="col-xl-4 col-md-6 mb-xl-0 mb-4">
+<div class="card card-blog card-plain">
+<div class="position-relative">
+<a class="d-block shadow-xl border-radius-xl">
+<img src="../../../assets/img/home-decor-3.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+</a>
+</div>
+<div class="card-body px-1 pb-0">
+
+<a href="javascript:;">
+<h5>
+TEI
+</h5>
+</a>
+<p class="mb-4 text-sm">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, nam?
+</p>
+<div class="d-flex align-items-center justify-content-between">
+<button type="button" class="btn btn-outline-primary btn-sm mb-0">Lihat</button>
+
+</div>
+</div>
+</div>
+</div>
+<!-- 1 -->
+<div class="col-xl-4 col-md-6 mb-xl-0 mb-4 mt-4">
+<div class="card card-blog card-plain">
+<div class="position-relative">
+<a class="d-block shadow-xl border-radius-xl">
+<img src="../../../assets/img/home-decor-3.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+</a>
+</div>
+<div class="card-body px-1 pb-0">
+
+<a href="javascript:;">
+<h5>
+TEI
+</h5>
+</a>
+<p class="mb-4 text-sm">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, nam?
+</p>
+<div class="d-flex align-items-center justify-content-between">
+<button type="button" class="btn btn-outline-primary btn-sm mb-0">Lihat</button>
+
+</div>
+</div>
+</div>
+</div>
+<!-- 2 -->
+<div class="col-xl-4 col-md-6 mb-xl-0 mb-4 mt-4">
+<div class="card card-blog card-plain">
+<div class="position-relative">
+<a class="d-block shadow-xl border-radius-xl">
+<img src="../../../assets/img/home-decor-3.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+</a>
+</div>
+<div class="card-body px-1 pb-0">
+
+<a href="javascript:;">
+<h5>
+TEI
+</h5>
+</a>
+<p class="mb-4 text-sm">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, nam?
+</p>
+<div class="d-flex align-items-center justify-content-between">
+<button type="button" class="btn btn-outline-primary btn-sm mb-0">Lihat</button>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-md-6 mb-xl-0 mb-4 mt-4">
+<div class="card card-blog card-plain">
+<div class="position-relative">
+<a class="d-block shadow-xl border-radius-xl">
+<img src="../../../assets/img/home-decor-3.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+</a>
+</div>
+<div class="card-body px-1 pb-0">
+
+<a href="javascript:;">
+<h5>
+TEI
+</h5>
+</a>
+<p class="mb-4 text-sm">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, nam?
+</p>
+<div class="d-flex align-items-center justify-content-between">
+<button type="button" class="btn btn-outline-primary btn-sm mb-0">Lihat</button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+</div>
+                   
+                 
+              
+                   
+                
+                  
         
-      </div>
-      </div>
+     
+     
     
-     <!-- modal -->
-     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Kategori BKK</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <div class="card mb-4">
-           
-            <div class="card-body px-0 pt-0 pb-2">
-              <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0 "id="bkk">
-                  <thead>
-                    <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kategori</th>
-                      
-                      <th class="text-center text-secondary opacity-7">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                     
-                      
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                     
-                      <td class="align-middle text-center">
-                         <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i class="far fa-trash-alt me-2"></i>Delete</a>
-                         <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
-                      </td>
-                    </tr>
-                   
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
      
-      </div>
-    </div>
-  </div>
-</div>
-<!-- modal 2  -->
- <!-- modal -->
- <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Kategori Mitra</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <div class="card mb-4">
-           
-            <div class="card-body px-0 pt-0 pb-2">
-              <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0 "id="mitra">
-                  <thead>
-                    <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kategori</th>
-                      
-                      <th class="text-center text-secondary opacity-7">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                     
-                      
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                     
-                      <td class="align-middle text-center">
-                         <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i class="far fa-trash-alt me-2"></i>Delete</a>
-                         <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
-                      </td>
-                    </tr>
-                   
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
-     
-      </div>
-    </div>
-  </div>
-</div>
     
       <footer class="footer pt-3  ">
         <div class="container-fluid">
@@ -370,34 +402,7 @@
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
   <script src="../assets/js/plugins/flatpickr.js"></script>
-  <script src="../assets/js/plugins/datatables.js"></script>
-  <script>
-    const dataTableSearch = new simpleDatatables.DataTable("#bkk", {
-      searchable: true,
-      fixedHeight: false
-    });
-  </script>
-  <script>
-    const mitra = new simpleDatatables.DataTable("#mitra", {
-      searchable: true,
-      fixedHeight: false
-    });
-  </script>
-  <script>
-    if (document.querySelector('.datetimepicker')) {
-      flatpickr('.datetimepicker', {
-        allowInput: true,
-        minDate:"today",
-      }); // flatpickr
-    }
-    Dropzone.autoDiscover = false;
-    var drop = document.getElementById('dropzone')
-    var myDropzone = new Dropzone(drop, {
-      url: "/file/post",
-      addRemoveLinks: true
 
-    });
-  </script>
 
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
@@ -408,6 +413,7 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
+   
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->

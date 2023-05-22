@@ -20,6 +20,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
+
   <title>
     Argon Dashboard 2 by Creative Tim
   </title>
@@ -65,7 +67,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active " href="/bkk">
+          <a class="nav-link " href="/bkk">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
@@ -73,7 +75,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  " href="/manajemen">
+          <a class="nav-link active " href="/manajemen">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-dark text-sm"></i>
             </div>
@@ -105,7 +107,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/data_master">
+          <a class="nav-link " href="/data_master">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-dark text-sm"></i>
             </div>
@@ -149,9 +151,9 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-white active" aria-current="page">BKK</li>
+            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Manajemen</li>
           </ol>
-          <h6 class="font-weight-bolder text-white mb-0">BKK</h6>
+          <h6 class="font-weight-bolder text-white mb-0">Manajemen</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -182,152 +184,218 @@
     <!-- End Navbar -->
     <div class="container-fluid py-4">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-          <div class="col-xl-12">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="card">
-                    <div class="card-header mx-4 p-3 text-center">
-                      <div class="icon icon-shape icon-lg bg-gradient-primary shadow text-center border-radius-lg">
-                        <i class="fas fa-landmark opacity-10"></i>
-                      </div>
-                    </div>
-                    <div class="card-body pt-0 p-3 text-center">
-                      <h6 class="text-center mb-0">BKK</h6>
-                      <span class="text-xs">Belong Interactive</span>
-                      <hr class="horizontal dark my-3">
-                      <a href="/detail_bkk" type="button" class="btn bg-gradient-primary">Lihat</a>
-                      <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn bg-gradient-info">Kategori</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mt-md-0 mt-4">
-                  <div class="card">
-                    <div class="card-header mx-4 p-3 text-center">
-                      <div class="icon icon-shape icon-lg bg-gradient-primary shadow text-center border-radius-lg">
-                        <i class="fab fa-paypal opacity-10"></i>
-                      </div>
-                    </div>
-                    <div class="card-body pt-0 p-3 text-center">
-                      <h6 class="text-center mb-0">Mitra</h6>
-                      <span class="text-xs">Freelance Payment</span>
-                      <hr class="horizontal dark my-3">
-                      <a href="/detail_mitra" type="button" class="btn bg-gradient-primary">Lihat</a>
-                      <button data-bs-toggle="modal" data-bs-target="#exampleModal1" type="button" class="btn bg-gradient-info">Kategori</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="row mt-4">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header pb-0 px-3">
+              <h6 class="mb-0">Manajemen</h6>
             </div>
-          </div>
+            <div class="card-body pt-4 p-3">
+              <ul class="list-group">
+                <li class="list-group-item border-0 d-flex p-4 mb-2 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <h6 class="mb-3 text-sm">Kurikulum</h6>
+                    <span class="mb-2 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, ex? Molestiae incidunt aperiam dolor, possimus dolores totam inventore voluptas quae.</span>
+                  </div>
+                  <div class="ms-auto text-end">
+                    
+                    <button class="btn btn-link text-dark px-3 mb-0"  data-bs-toggle="modal" data-bs-target="#modal-form"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</button>
+                    <!-- MODAL 1 -->
+                    <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-center">
+                <h3 class="font-weight-bolder text-primary text-gradient">Kurikulum</h3>
+                <p class="mb-0">Silahkan Isi Kurikulum</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                
+                  <div id="editor"></div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-primary btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
           </div>
         </div>
-        
+      </div>
+    </div>
+                    <!-- END MODAL 1 -->
+                  </div>
+                </li>
+                <li class="list-group-item border-0 d-flex p-4 mb-2 mt-3 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <h6 class="mb-3 text-sm">Kesiswaan</h6>
+                    <span class="mb-2 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, ex? Molestiae incidunt aperiam dolor, possimus dolores totam inventore voluptas quae.</span>
+                  </div>
+                  <div class="ms-auto text-end">
+
+                  <button class="btn btn-link text-dark px-3 mb-0"  data-bs-toggle="modal" data-bs-target="#modal-form1"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</button>
+                  <!-- MODAL 2 -->
+                  <div class="modal fade" id="modal-form1" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-center">
+                <h3 class="font-weight-bolder text-primary text-gradient">Kesiswaan</h3>
+                <p class="mb-0">Silahkan Isi Kesiswaan</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                
+                  <div id="editor2"></div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-primary btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                  <!-- END MODAL 2 -->
+                  </div>
+                </li>
+                <li class="list-group-item border-0 d-flex p-4 mb-2 mt-3 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <h6 class="mb-3 text-sm">Humas</h6>
+                    <span class="mb-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quasi minus pariatur natus, beatae, iure doloremque sapiente unde accusantium nihil deleniti voluptatem saepe quidem ipsa aliquam, adipisci libero debitis. Tempore?</span>
+                   
+                  </div>
+                  <div class="ms-auto text-end">
+                   
+                  <button class="btn btn-link text-dark px-3 mb-0"  data-bs-toggle="modal" data-bs-target="#modal-form2"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</button>
+                  <!-- MODAL 3  -->
+                  <div class="modal fade" id="modal-form2" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-center">
+                <h3 class="font-weight-bolder text-primary text-gradient">Humas</h3>
+                <p class="mb-0">Silahkan Isi Humas</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                
+                  <div id="editor3"></div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-primary btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                  <!-- END MODAL 3 -->
+                  </div>
+                </li>
+                <li class="list-group-item border-0 d-flex p-4 mb-2 mt-3 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <h6 class="mb-3 text-sm">Sarana Prasarana</h6>
+                    <span class="mb-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptatem.</span>
+                    
+                  </div>
+                  <div class="ms-auto text-end">
+                   
+                  <button class="btn btn-link text-dark px-3 mb-0"  data-bs-toggle="modal" data-bs-target="#modal-form3"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</button>
+                  <!-- MODAL 3 -->
+                  <div class="modal fade" id="modal-form3" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-center">
+                <h3 class="font-weight-bolder text-primary text-gradient">Sarana Prasarana</h3>
+                <p class="mb-0">Silahkan Isi Sarana Prasarana</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                
+                  <div id="editor4"></div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-primary btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL 3 -->
+                  </div>
+                </li>
+                <li class="list-group-item border-0 d-flex p-4 mb-2 mt-3 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <h6 class="mb-3 text-sm">Tata Usaha</h6>
+                    <span class="mb-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit praesentium non eveniet error eligendi tenetur iure sequi dolorum rerum nesciunt natus repellendus veritatis, obcaecati voluptates cumque laudantium nulla perferendis consequatur in quaerat unde sapiente? Praesentium, odio nihil? Quo, quia.</span>
+                    
+                  </div>
+                  <div class="ms-auto text-end">
+       
+                  <button class="btn btn-link text-dark px-3 mb-0"  data-bs-toggle="modal" data-bs-target="#modal-form4"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</button>
+                  <!-- MODAL 4 -->
+                  <div class="modal fade" id="modal-form4" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-center">
+                <h3 class="font-weight-bolder text-primary text-gradient">Tata Usaha</h3>
+                <p class="mb-0">Silahkan Isi Tata Usaha</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                
+                  <div id="editor5"></div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-primary btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                  <!-- END MODAL 4 -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       </div>
+      
+      </div>
+     
     
-     <!-- modal -->
-     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Kategori BKK</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <div class="card mb-4">
-           
-            <div class="card-body px-0 pt-0 pb-2">
-              <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0 "id="bkk">
-                  <thead>
-                    <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kategori</th>
-                      
-                      <th class="text-center text-secondary opacity-7">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                     
-                      
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                     
-                      <td class="align-middle text-center">
-                         <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i class="far fa-trash-alt me-2"></i>Delete</a>
-                         <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
-                      </td>
-                    </tr>
-                   
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
      
-      </div>
-    </div>
-  </div>
-</div>
-<!-- modal 2  -->
- <!-- modal -->
- <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Kategori Mitra</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <div class="card mb-4">
-           
-            <div class="card-body px-0 pt-0 pb-2">
-              <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0 "id="mitra">
-                  <thead>
-                    <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kategori</th>
-                      
-                      <th class="text-center text-secondary opacity-7">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                     
-                      
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                     
-                      <td class="align-middle text-center">
-                         <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i class="far fa-trash-alt me-2"></i>Delete</a>
-                         <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
-                      </td>
-                    </tr>
-                   
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
-     
-      </div>
-    </div>
-  </div>
-</div>
     
       <footer class="footer pt-3  ">
         <div class="container-fluid">
@@ -372,15 +440,9 @@
   <script src="../assets/js/plugins/flatpickr.js"></script>
   <script src="../assets/js/plugins/datatables.js"></script>
   <script>
-    const dataTableSearch = new simpleDatatables.DataTable("#bkk", {
+    const dataTableSearch = new simpleDatatables.DataTable("#datatable-search", {
       searchable: true,
-      fixedHeight: false
-    });
-  </script>
-  <script>
-    const mitra = new simpleDatatables.DataTable("#mitra", {
-      searchable: true,
-      fixedHeight: false
+      fixedHeight: true
     });
   </script>
   <script>
@@ -408,6 +470,41 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
+    <script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor2' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor3' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor4' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor5' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->

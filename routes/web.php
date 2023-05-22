@@ -30,8 +30,18 @@ Route::get('/detail_berita',[LandingController::class,'detail_berita']);
 Route::get('/detail_bkk',[LandingController::class,'detail_bkk']);
 // Tampilan Admin
 Route::get('/dashboard',[AdminController::class,'dashboard']);
+Route::get('/detail_bkk',[AdminController::class,'detail_bkk']);
+Route::get('/detail_mitra',[AdminController::class,'detail_mitra']);
+Route::get('/kategori_bkk',[AdminController::class,'kategori_bkk']);
+Route::get('/manajemen',[AdminController::class,'manajemen']);
 Route::get('/bkk',[AdminController::class,'bkk']);
 Route::get('/pgri',[AdminController::class,'pgri']);
 Route::get('/profile',[AdminController::class,'profile']);
-
+Route::get('/jurusan',[AdminController::class,'jurusan']);
+Route::get('/berita',[AdminController::class,'berita']);
+Route::get('/budaya_sekolah',[AdminController::class,'budaya_sekolah']);
+Route::get('/data_master',[AdminController::class,'data_master']);
+Route::get('/galeri',[AdminController::class,'galeri']);
+Route::get('/kegiatan',[AdminController::class,'kegiatan']);
+Route::get('/fasilitas',[AdminController::class,'fasilitas']);
 

@@ -20,6 +20,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
+
   <title>
     Argon Dashboard 2 by Creative Tim
   </title>
@@ -57,7 +59,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/pgri">
+          <a class="nav-link active " href="/pgri">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
             </div>
@@ -65,19 +67,51 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="../pages/billing.html">
+          <a class="nav-link " href="/bkk">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Billing</span>
+            <span class="nav-link-text ms-1">BKK</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.creative-tim.com/learning-lab/bootstrap/alerts/argon-dashboard">
+          <a class="nav-link  " href="/manajemen">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-dark text-sm"></i>
             </div>
-            <span class="nav-link-text ms-1">Components</span>
+            <span class="nav-link-text ms-1">Manajemen</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/jurusan">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
+            </div>
+            <span class="nav-link-text ms-1">Jurusan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/berita">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
+            </div>
+            <span class="nav-link-text ms-1">Berita</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/budaya_sekolah">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
+            </div>
+            <span class="nav-link-text ms-1">Budaya Sekolah</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/data_master">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
+            </div>
+            <span class="nav-link-text ms-1">Data Master</span>
           </a>
         </li>
         <li class="nav-item mt-3">
@@ -165,8 +199,66 @@
                       <h6 class="text-center mb-0">Visi Misi</h6>
                       <span class="text-xs">Belong Interactive</span>
                       <hr class="horizontal dark my-3">
-                      <button type="button" class="btn bg-gradient-primary">Edit Foto</button>
-                      <button type="button" class="btn bg-gradient-info">Edit Teks</button>
+                      <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#foto1">Edit Foto</button>
+                      <button type="button" class="btn btn-block bg-gradient-info mb-3" data-bs-toggle="modal" data-bs-target="#modal-form">Edit Teks</button>
+                     <!-- MODAL -->
+                     <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-left">
+                <h3 class="font-weight-bolder text-info text-gradient">Visi Misi</h3>
+                <p class="mb-0">Silahkan Isi Visi Misi</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                
+                  <div id="editor"></div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                     <!-- END MODAL -->
+                     <!-- FOTO  -->
+                     <div class="modal fade" id="foto1" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-left">
+                <h3 class="font-weight-bolder text-primary text-gradient ">Foto </h3>
+                <p class="mb-0">Silahkan Isi Foto Visi Misi</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                <div class="form-group">
+    <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-primary btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                   
+                     <!-- END FOTO -->
                     </div>
                   </div>
                 </div>
@@ -181,8 +273,65 @@
                       <h6 class="text-center mb-0">Sejarah</h6>
                       <span class="text-xs">Freelance Payment</span>
                       <hr class="horizontal dark my-3">
-                      <button type="button" class="btn bg-gradient-primary">Edit Foto</button>
-                      <button type="button" class="btn bg-gradient-info">Edit Teks</button>
+                      <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#foto2">Edit Foto</button>
+                      <button type="button" class="btn btn-block bg-gradient-info mb-3" data-bs-toggle="modal" data-bs-target="#modal-form1">Edit Teks</button>
+                      <!-- MODAL 2 -->
+                      <div class="modal fade" id="modal-form1" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-left">
+                <h3 class="font-weight-bolder text-info text-gradient">Sejarah</h3>
+                <p class="mb-0">Silahkan Isi Sejarah</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                
+                  <div id="editor2"></div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                      <!-- END MODAL 2 -->
+                      <!-- FOTO 2 -->
+                      <div class="modal fade" id="foto2" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-left">
+                <h3 class="font-weight-bolder text-primary text-gradient ">Foto </h3>
+                <p class="mb-0">Silahkan Isi Foto Sejarah</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                <div class="form-group">
+    <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-primary btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                      <!-- END FOTO 2 -->
                     </div>
                   </div>
                 </div>
@@ -201,8 +350,65 @@
                       <h6 class="text-center mb-0">TTG Website</h6>
                       <span class="text-xs">Belong Interactive</span>
                       <hr class="horizontal dark my-3">
-                      <button type="button" class="btn bg-gradient-primary">Edit Foto</button>
-                      <button type="button" class="btn bg-gradient-info">Edit Teks</button>
+                      <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#foto3">Edit Foto</button>
+                      <button type="button" class="btn btn-block bg-gradient-info mb-3" data-bs-toggle="modal" data-bs-target="#modal-form2">Edit Teks</button>
+                      <!-- MODAL 3 -->
+                      <div class="modal fade" id="modal-form2" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-left">
+                <h3 class="font-weight-bolder text-info text-gradient">Tentang Website</h3>
+                <p class="mb-0">Silahkan Isi Tentang Website</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                
+                  <div id="editor3"></div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                      <!-- END MODAL 3 -->
+                      <!-- FOTO 3 -->
+                      <div class="modal fade" id="foto3" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-left">
+                <h3 class="font-weight-bolder text-primary text-gradient ">Foto </h3>
+                <p class="mb-0">Silahkan Isi Tentang Website</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                <div class="form-group">
+    <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-primary btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                      <!-- END FOTO 3 -->
                     </div>
                   </div>
                 </div>
@@ -218,8 +424,65 @@
                       <span class="text-xs">Freelance Payment</span>
                       <hr class="horizontal dark my-3">
                       
-                      <button type="button" class="btn bg-gradient-primary">Edit Foto</button>
-                      <button type="button" class="btn bg-gradient-info">Edit Teks</button>
+                      <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#foto4">Edit Foto</button>
+                      <button type="button" class="btn btn-block bg-gradient-info mb-3" data-bs-toggle="modal" data-bs-target="#modal-form3">Edit Teks</button>
+                      <!-- MODAL 4 -->
+                      <div class="modal fade" id="modal-form3" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-left">
+                <h3 class="font-weight-bolder text-info text-gradient">Kepala Sekolah</h3>
+                <p class="mb-0">Silahkan Isi Kepala Sekolah</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                
+                  <div id="editor4"></div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                      <!-- END MODAL 4 -->
+                      <!-- FOTO 4 -->
+                      <div class="modal fade" id="foto4" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+          <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-left">
+                <h3 class="font-weight-bolder text-primary text-gradient ">Foto </h3>
+                <p class="mb-0">Silahkan Isi Kepala Sekolah</p>
+              </div>
+              <div class="card-body">
+                <form role="form text-left">
+                <div class="form-group">
+    <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+                 
+                
+                  <div class="text-center">
+                    <button type="button" class="btn btn-round bg-gradient-primary btn-lg w-100 mt-4 mb-0">Submit</button>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                      <!-- END FOTO 4 -->
                       
                       
  
@@ -390,6 +653,34 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
+  <script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor2' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor3' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor4' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
