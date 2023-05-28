@@ -154,63 +154,70 @@
         </div>
         <div class="container">
             <div class="page-header__inner">
-                <h2>Visi & Misi</h2>
+                <h2>Budaya Sekolah </h2>
             </div>
         </div>
     </section>
-    <!--Blog Details Start-->
-    <section class="blog-details">
+    <!--Portfolio Details Start-->
+    <section class="portfolio-details">
+
         <div class="container">
+            <div class="slider">
+                <ul class="items">
+                    <li class="item current"><img
+                            src="{{asset('assets_landing/images/gambar1.jpg')}}"></li>
+                    <li class="item"><img
+                            src="https://codeisle.info/blog/wp-content/uploads/2018/12/kilimanjaro-5895.jpg"></li>
+                    <li class="item"><img
+                            src="https://codeisle.info/blog/wp-content/uploads/2018/12/aconcagua-6962.jpg">
+                    </li>
+                    <li class="item"><img
+                            src="https://codeisle.info/blog/wp-content/uploads/2018/12/matterhorn-4478.jpg"></li>
+                </ul>
+                <div class="buttons">
+                    <button type="button" id="prev" class="buttonss prev"></button>
+                    <button type="button" id="next" class="buttonss next"></button>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-xl-6 col-lg-7">
-                    <div class="blog-details__left">
-                        <div class="blog-details__content">
-                            <div class="row">
-                                <ul class="list-unstyled blog-details__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
-                                    </li>
-                                </ul>
-                                {{-- <h3 class="blog-details__title">Visi Dan Misi</h3> --}}
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Visi SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">Mewujudkan SMK berkarakter, berkompeten dan unggul.</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Misi SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">1. Menanamkan keimanan, ketaqwaan dan akhlak mulia.</p>
-                                    <p class="blog-details__text-1">2. Menyelenggarakan pendidikan yang memadukan aspek agama, iptek dan budaya</p>
-                                    <p class="blog-details__text-1">3. Menumbuhkan budaya literasi dan kecakapan hidup</p>
-                                    <p class="blog-details__text-1">4. Menciptakan sumber daya yang kompeten, mandiri dan mampu beradaptasi</p>
-                                    <p class="blog-details__text-1">5. Mewujudkan lingkungan yang bersih, indah dan nyaman</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-7">
-                    <div class="blog-details__left">
-                        <div class="blog-details__content">
-                            <div class="row">
-                                <ul class="list-unstyled blog-details__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
-                                    </li>
-                                </ul>
-                                {{-- <h3 class="blog-details__title">Tujuan</h3> --}}
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Tujuan SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">1. Sekolah menghasilkan lulusan yang beriman, bertaqwa, berakhak mulia dengan kompetensi yang bersaing di era global.</p>
-                                    <p class="blog-details__text-1">2. Sekolah menghasilkan dan menerapkan kurikulum sekolah yang mampu mencapai Standar Kompetensi Lulusan (SKL) Pendidikan Menengah Kejuruan (PMK).</p>
-                                    <p class="blog-details__text-1">3. Sekolah meraih nilai ”A” pada akreditasi nasional dengan mengimplementasikan Penjamin Mutu Pendidikan (PMP).</p>
-                                    <p class="blog-details__text-1">4. Sekolah melaksanakan proses pembelajaran yang inovatif, kreatif, komunikatif, kolaboratif dan berbasis IT dengan menerapkan pembelajaran bilingual pada mata pelajaran peminatan.</p>
-                                    <p class="blog-details__text-1">5. Sekolah menyediakan sarana dan prasarana pendidikan yang relevan dan memenuhi standar sarana dan prasarana pendidikan menengah kejuruan.</p>
-                                    <p class="blog-details__text-1">6. Sekolah melaksanakan kegiatan pengembangan diri dalam rangka membentuk karakter peserta didik.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <script>
+                    function slider(flag, num) {
+                        var current = $(".item.current"),
+                            next,
+                            index;
+                        if (!flag) {
+                            next = current.is(":last-child") ? $(".item").first() : current.next();
+                            index = next.index();
+                        } else if (flag === "dot") {
+                            next = $(".item").eq(num);
+                            index = num;
+                        } else {
+                            next = current.is(":first-child") ? $(".item").last() : current.prev();
+                            index = next.index();
+                        }
+                        next.addClass("current");
+                        current.removeClass("current");
+                        $(".dot").eq(index).addClass("current").siblings().removeClass("current");
+                    }
+                    var setSlider = setInterval(slider, 4000);
+
+                    $(".buttonss").on("click", function() {
+                        clearInterval(setSlider);
+                        var flag = $(this).is(".prev") ? true : false;
+                        slider(flag);
+                        setSlider = setInterval(slider, 4000);
+                    });
+
+                    $(".dot").on("click", function() {
+                        if ($(this).is(".current")) return;
+                        clearInterval(setSlider);
+                        var num = $(this).index();
+                        slider("dot", num);
+                        setSlider = setInterval(slider, 4000);
+                    });
+                </script>
             </div>
         </div>
     </section>
-    <!--Blog Details End-->
+    <!--Portfolio Details End-->
 @endsection

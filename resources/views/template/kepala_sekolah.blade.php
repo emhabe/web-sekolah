@@ -3,6 +3,16 @@
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
 
+
+
+
+
+    <!-- <div class="preloader">
+            <div class="preloader__image"></div>
+        </div> -->
+    <!-- /.preloader -->
+
+
     <header class="main-header clearfix">
         <div class="main-header__top">
             <div class="main-header__top-social-box">
@@ -79,7 +89,7 @@
                                     <li>
                                         <a href="/">Beranda </a>
                                     </li>
-                                    <li class="dropdown current">
+                                    <li class="dropdown">
                                         <a href="#">Tentang Kami</a>
                                         <ul>
                                             <li><a href="/sejarah">Sejarah Singkat</a></li>
@@ -91,7 +101,7 @@
                                             <li><a href="/mitra_kerja">Mitra Kerja</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown">
+                                    <li class="dropdown current">
                                         <a href="#">Manajemen </a>
                                         <ul>
                                             <li><a href="/kepala_sekolah">Kepala Sekolah</a></li>
@@ -125,7 +135,7 @@
                                             <li><a href="/ekstrakulikuler">Ekstrakulikuler</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li> 
                                         <a href="/berita_sekolah">Berita</a>
                                     </li>
                                     <li>
@@ -154,63 +164,48 @@
         </div>
         <div class="container">
             <div class="page-header__inner">
-                <h2>Visi & Misi</h2>
+                <h2>Kepala Sekolah </h2>
             </div>
         </div>
     </section>
-    <!--Blog Details Start-->
-    <section class="blog-details">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-7">
-                    <div class="blog-details__left">
-                        <div class="blog-details__content">
-                            <div class="row">
-                                <ul class="list-unstyled blog-details__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
-                                    </li>
-                                </ul>
-                                {{-- <h3 class="blog-details__title">Visi Dan Misi</h3> --}}
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Visi SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">Mewujudkan SMK berkarakter, berkompeten dan unggul.</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Misi SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">1. Menanamkan keimanan, ketaqwaan dan akhlak mulia.</p>
-                                    <p class="blog-details__text-1">2. Menyelenggarakan pendidikan yang memadukan aspek agama, iptek dan budaya</p>
-                                    <p class="blog-details__text-1">3. Menumbuhkan budaya literasi dan kecakapan hidup</p>
-                                    <p class="blog-details__text-1">4. Menciptakan sumber daya yang kompeten, mandiri dan mampu beradaptasi</p>
-                                    <p class="blog-details__text-1">5. Mewujudkan lingkungan yang bersih, indah dan nyaman</p>
+        <!--Team Details Start-->
+        <section class="team-details">
+            <div class="container">
+                <div class="team-details__top">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="team-details__top-left">
+                                <div class="team-details__top-content">
+                                    <h3 class="team-details__top-name">Jessica Brown</h3>
+                                    <p class="team-details__top-title">Co founder & CEO</p>
+                                    <div class="team-details__social">
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <p class="team-details__top-text-1">I help my clients stand out and <br> they help
+                                        me grow.</p>
+                                    <p class="team-details__top-text-2">Lorem ipsum dolor sit amet, con adipiscing elit
+                                        tiam convallis elit id impedie. Quisq commodo simply free ornare tortor.</p>
+                                    <p class="team-details__top-text-3">If you are going to use a passage of Lorem
+                                        Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                                        middle of text.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-7">
-                    <div class="blog-details__left">
-                        <div class="blog-details__content">
-                            <div class="row">
-                                <ul class="list-unstyled blog-details__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
-                                    </li>
-                                </ul>
-                                {{-- <h3 class="blog-details__title">Tujuan</h3> --}}
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Tujuan SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">1. Sekolah menghasilkan lulusan yang beriman, bertaqwa, berakhak mulia dengan kompetensi yang bersaing di era global.</p>
-                                    <p class="blog-details__text-1">2. Sekolah menghasilkan dan menerapkan kurikulum sekolah yang mampu mencapai Standar Kompetensi Lulusan (SKL) Pendidikan Menengah Kejuruan (PMK).</p>
-                                    <p class="blog-details__text-1">3. Sekolah meraih nilai ”A” pada akreditasi nasional dengan mengimplementasikan Penjamin Mutu Pendidikan (PMP).</p>
-                                    <p class="blog-details__text-1">4. Sekolah melaksanakan proses pembelajaran yang inovatif, kreatif, komunikatif, kolaboratif dan berbasis IT dengan menerapkan pembelajaran bilingual pada mata pelajaran peminatan.</p>
-                                    <p class="blog-details__text-1">5. Sekolah menyediakan sarana dan prasarana pendidikan yang relevan dan memenuhi standar sarana dan prasarana pendidikan menengah kejuruan.</p>
-                                    <p class="blog-details__text-1">6. Sekolah melaksanakan kegiatan pengembangan diri dalam rangka membentuk karakter peserta didik.</p>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="team-details__top-right">
+                                <div class="team-details__top-img">
+                                    <img src="assets_landing/images/coba.jpg" alt="">
+                                    <div class="team-details__big-text-kanan">jessica</div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--Blog Details End-->
+        </section>
+        <!--Team Details End-->
 @endsection

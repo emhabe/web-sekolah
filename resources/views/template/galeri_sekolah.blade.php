@@ -163,8 +163,8 @@
         <section class="portfolio-page">
             <div class="container">
                 <div class="row">
-                    <h3 class="blog-details__title mb-5">Galeri Sekolah SMK PGRI Singosari</h3>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                    <h3 class="blog-details__title mb-5">Galeri SMK PGRI Singosari</h3>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <!--Project Two Single Start-->
                         <div class="project-one__single">
                             <div class="project-one__img">
@@ -182,7 +182,7 @@
                         </div>
                         <!--Project Two Single End-->
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <!--Project Two Single Start-->
                         <div class="project-one__single">
                             <div class="project-one__img">
@@ -200,7 +200,7 @@
                         </div>
                         <!--Project Two Single End-->
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <!--Project Two Single Start-->
                         <div class="project-one__single">
                             <div class="project-one__img">
@@ -218,7 +218,7 @@
                         </div>
                         <!--Project Two Single End-->
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                         <!--Project Two Single Start-->
                         <div class="project-one__single">
                             <div class="project-one__img">
@@ -236,7 +236,7 @@
                         </div>
                         <!--Project Two Single End-->
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="500ms">
                         <!--Project Two Single Start-->
                         <div class="project-one__single">
                             <div class="project-one__img">
@@ -254,7 +254,7 @@
                         </div>
                         <!--Project Two Single End-->
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="600ms">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="600ms">
                         <!--Project Two Single Start-->
                         <div class="project-one__single">
                             <div class="project-one__img">

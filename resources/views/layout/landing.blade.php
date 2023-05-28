@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="{{asset('assets_landing/css/brote.css')}}" />
     <link rel="stylesheet" href="{{asset('assets_landing/css/brote-responsive.css')}}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 </head>
 
@@ -271,8 +271,6 @@
     <script src="{{asset('assets_landing/vendors/timepicker/timePicker.js')}}"></script>
     <script src="{{asset('assets_landing/vendors/circleType/jquery.circleType.js')}}"></script>
     <script src="{{asset('assets_landing/vendors/circleType/jquery.lettering.min.js')}}"></script>
-    <script src="https://cdn.example.com/path/to/fontawesome-pro/js/all.js"></script>
-
 
 
     <!-- template js -->

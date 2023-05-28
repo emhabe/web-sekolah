@@ -154,63 +154,32 @@
         </div>
         <div class="container">
             <div class="page-header__inner">
-                <h2>Visi & Misi</h2>
+                <h2>Mitra Kerja </h2>
             </div>
         </div>
     </section>
-    <!--Blog Details Start-->
-    <section class="blog-details">
+    <!--Brand One Start-->
+    <section class="brand-one">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-7">
-                    <div class="blog-details__left">
-                        <div class="blog-details__content">
-                            <div class="row">
-                                <ul class="list-unstyled blog-details__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
-                                    </li>
-                                </ul>
-                                {{-- <h3 class="blog-details__title">Visi Dan Misi</h3> --}}
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Visi SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">Mewujudkan SMK berkarakter, berkompeten dan unggul.</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Misi SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">1. Menanamkan keimanan, ketaqwaan dan akhlak mulia.</p>
-                                    <p class="blog-details__text-1">2. Menyelenggarakan pendidikan yang memadukan aspek agama, iptek dan budaya</p>
-                                    <p class="blog-details__text-1">3. Menumbuhkan budaya literasi dan kecakapan hidup</p>
-                                    <p class="blog-details__text-1">4. Menciptakan sumber daya yang kompeten, mandiri dan mampu beradaptasi</p>
-                                    <p class="blog-details__text-1">5. Mewujudkan lingkungan yang bersih, indah dan nyaman</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-7">
-                    <div class="blog-details__left">
-                        <div class="blog-details__content">
-                            <div class="row">
-                                <ul class="list-unstyled blog-details__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
-                                    </li>
-                                </ul>
-                                {{-- <h3 class="blog-details__title">Tujuan</h3> --}}
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Tujuan SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">1. Sekolah menghasilkan lulusan yang beriman, bertaqwa, berakhak mulia dengan kompetensi yang bersaing di era global.</p>
-                                    <p class="blog-details__text-1">2. Sekolah menghasilkan dan menerapkan kurikulum sekolah yang mampu mencapai Standar Kompetensi Lulusan (SKL) Pendidikan Menengah Kejuruan (PMK).</p>
-                                    <p class="blog-details__text-1">3. Sekolah meraih nilai ”A” pada akreditasi nasional dengan mengimplementasikan Penjamin Mutu Pendidikan (PMP).</p>
-                                    <p class="blog-details__text-1">4. Sekolah melaksanakan proses pembelajaran yang inovatif, kreatif, komunikatif, kolaboratif dan berbasis IT dengan menerapkan pembelajaran bilingual pada mata pelajaran peminatan.</p>
-                                    <p class="blog-details__text-1">5. Sekolah menyediakan sarana dan prasarana pendidikan yang relevan dan memenuhi standar sarana dan prasarana pendidikan menengah kejuruan.</p>
-                                    <p class="blog-details__text-1">6. Sekolah melaksanakan kegiatan pengembangan diri dalam rangka membentuk karakter peserta didik.</p>
-                                </div>
-                            </div>
+            <div class="brand-one__inner">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="">
+                            <img src="assets_landing/images/download.png" alt="" class="mitra_kerja">
+                            <img src="assets_landing/images/download1.png" alt="" class="mitra_kerja">
+                            <img src="assets_landing/images/siu.png" alt="" class="mitra_kerja">
+                            <img src="assets_landing/images/download2.png" alt="" class="mitra_kerja">
+                            <img src="assets_landing/images/brand/brand-1-5.png" alt="" class="mitra_kerja">
+                            <img src="assets_landing/images/brand/brand-1-1.png" alt="" class="mitra_kerja">
+                            <img src="assets_landing/images/brand/brand-1-2.png" alt="" class="mitra_kerja">
+                            <img src="assets_landing/images/brand/brand-1-3.png" alt="" class="mitra_kerja">
+                            <img src="assets_landing/images/brand/brand-1-4.png" alt="" class="mitra_kerja">
+                            <img src="assets_landing/images/brand/brand-1-5.png" alt="" class="mitra_kerja">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Blog Details End-->
+    <!--Brand One End-->
 @endsection

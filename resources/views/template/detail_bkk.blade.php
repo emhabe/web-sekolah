@@ -125,7 +125,7 @@
                                             <li><a href="/rekayasa_perangkat_lunak">Rekayasa Perangkat Lunak</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li class="current">
                                         <a href="/bursa_kerja_khusus">Bursa Kerja Khusus</a>
                                     </li>
                                     <li class="dropdown">
@@ -135,7 +135,7 @@
                                             <li><a href="/ekstrakulikuler">Ekstrakulikuler</a></li>
                                         </ul>
                                     </li>
-                                    <li class="current"> 
+                                    <li> 
                                         <a href="/berita_sekolah">Berita</a>
                                     </li>
                                     <li>

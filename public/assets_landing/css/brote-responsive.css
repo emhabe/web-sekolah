@@ -514,8 +514,12 @@
     .contact-page-two__left {
         margin-bottom: 60px;
     }
-
-
+    .item img {
+        height: 550px;
+    }
+    .contact-one__img img {
+        display: none;
+     }
 
 
 
@@ -1174,10 +1178,23 @@
         display: block;
         padding: 0px 0 70px;
     }
+    .portfolio-details__img img {
+        height:200px;
+      }
     .page-header__inner h2 {
         font-size: 27px;
         line-height: 37px;
     }
+    .items{
+        height: 250px !important;
+    }
+    .item img {
+        height: 250px !important;
+    }
+    .contact-one__img img {
+       display: none;
+    }
+
 
 
 

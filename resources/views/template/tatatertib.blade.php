@@ -154,63 +154,41 @@
         </div>
         <div class="container">
             <div class="page-header__inner">
-                <h2>Visi & Misi</h2>
+                <h2>Tatat Tertib </h2>
             </div>
         </div>
     </section>
-    <!--Blog Details Start-->
-    <section class="blog-details">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-7">
-                    <div class="blog-details__left">
-                        <div class="blog-details__content">
-                            <div class="row">
-                                <ul class="list-unstyled blog-details__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
-                                    </li>
-                                </ul>
-                                {{-- <h3 class="blog-details__title">Visi Dan Misi</h3> --}}
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Visi SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">Mewujudkan SMK berkarakter, berkompeten dan unggul.</p>
-                                </div>
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Misi SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">1. Menanamkan keimanan, ketaqwaan dan akhlak mulia.</p>
-                                    <p class="blog-details__text-1">2. Menyelenggarakan pendidikan yang memadukan aspek agama, iptek dan budaya</p>
-                                    <p class="blog-details__text-1">3. Menumbuhkan budaya literasi dan kecakapan hidup</p>
-                                    <p class="blog-details__text-1">4. Menciptakan sumber daya yang kompeten, mandiri dan mampu beradaptasi</p>
-                                    <p class="blog-details__text-1">5. Mewujudkan lingkungan yang bersih, indah dan nyaman</p>
-                                </div>
-                            </div>
+        <!--Portfolio Details Start-->
+        <section class="portfolio-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="portfolio-details__content-one">
+                            <h3>Tatat Tertib SMK PGRI Singosari</h3>
+                            <p>Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui
+                                dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                explicabo. Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit amet
+                                finibus eros. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the ndustry standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                                has survived not only five centuries. Lorem Ipsum is simply dummy text of the new design
+                                printng and type setting Ipsum Take a look at our round up of the best shows coming soon
+                                to your telly box has been the is industrys. When an unknown printer took a galley of
+                                type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries, but also the leap into electronic typesetting, remaining essentially
+                                unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                containing.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-7">
-                    <div class="blog-details__left">
-                        <div class="blog-details__content">
-                            <div class="row">
-                                <ul class="list-unstyled blog-details__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
-                                    </li>
-                                </ul>
-                                {{-- <h3 class="blog-details__title">Tujuan</h3> --}}
-                                <div class="mb-4">
-                                    <h3 class="blog-details__title2">Tujuan SMK PGRI Singosari</h3>
-                                    <p class="blog-details__text-1">1. Sekolah menghasilkan lulusan yang beriman, bertaqwa, berakhak mulia dengan kompetensi yang bersaing di era global.</p>
-                                    <p class="blog-details__text-1">2. Sekolah menghasilkan dan menerapkan kurikulum sekolah yang mampu mencapai Standar Kompetensi Lulusan (SKL) Pendidikan Menengah Kejuruan (PMK).</p>
-                                    <p class="blog-details__text-1">3. Sekolah meraih nilai ”A” pada akreditasi nasional dengan mengimplementasikan Penjamin Mutu Pendidikan (PMP).</p>
-                                    <p class="blog-details__text-1">4. Sekolah melaksanakan proses pembelajaran yang inovatif, kreatif, komunikatif, kolaboratif dan berbasis IT dengan menerapkan pembelajaran bilingual pada mata pelajaran peminatan.</p>
-                                    <p class="blog-details__text-1">5. Sekolah menyediakan sarana dan prasarana pendidikan yang relevan dan memenuhi standar sarana dan prasarana pendidikan menengah kejuruan.</p>
-                                    <p class="blog-details__text-1">6. Sekolah melaksanakan kegiatan pengembangan diri dalam rangka membentuk karakter peserta didik.</p>
-                                </div>
-                            </div>
+                        <div class="portfolio-details__content-two">
+                            <p>Lorem Ipsum has been the ndustry standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                                has survived not only five centuries. Lorem Ipsum is simply dummy text of the new design
+                                printng and type setting Ipsum Take a look at our round up of the best shows coming soon
+                                to your telly box has been the is industrys.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--Blog Details End-->
+        </section>
+        <!--Portfolio Details End-->
 @endsection
