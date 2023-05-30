@@ -49,13 +49,14 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active " href="/dashboard">
+          <a class="nav-link active" href="/dashboard">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
+        @if(Auth::user()->level=="admin")
         <li class="nav-item">
           <a class="nav-link " href="/pgri">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
@@ -64,14 +65,18 @@
             <span class="nav-link-text ms-1">PGRI</span>
           </a>
         </li>
+        @endif
+         @if(Auth::user()->level=="humas"|| Auth::user()->level=="kurikulum" ||Auth::user()->level=="admin"||Auth::user()->level=="bkk")
         <li class="nav-item">
-          <a class="nav-link " href="/bkk">
+          <a class="nav-link  " href="/bkk">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">BKK</span>
           </a>
         </li>
+        @endif
+        @if(Auth::user()->level=="admin")
         <li class="nav-item">
           <a class="nav-link  " href="/manajemen">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
@@ -80,6 +85,8 @@
             <span class="nav-link-text ms-1">Manajemen</span>
           </a>
         </li>
+        @endif
+        @if(Auth::user()->level=="admin")
         <li class="nav-item">
           <a class="nav-link" href="/jurusan">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
@@ -88,6 +95,8 @@
             <span class="nav-link-text ms-1">Jurusan</span>
           </a>
         </li>
+      @endif
+        @if(Auth::user()->level=="humas"|| Auth::user()->level=="kurikulum" ||Auth::user()->level=="admin"|| Auth::user()->level=="kesiswaan"|| Auth::user()->level=="sapras")
         <li class="nav-item">
           <a class="nav-link" href="/berita">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
@@ -96,49 +105,47 @@
             <span class="nav-link-text ms-1">Berita</span>
           </a>
         </li>
+        @endif
+        @if(Auth::user()->level=="humas" ||Auth::user()->level=="admin")
         <li class="nav-item">
-          <a class="nav-link " href="/budaya_sekolah">
+          <a class="nav-link " href="/budaya_sekolah_admin">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-dark text-sm"></i>
             </div>
             <span class="nav-link-text ms-1">Budaya Sekolah</span>
           </a>
         </li>
+        @endif
+        @if(Auth::user()->level=="admin")
         <li class="nav-item">
-          <a class="nav-link " href="/data_master">
+          <a class="nav-link" href="/data_master">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-dark text-sm"></i>
             </div>
             <span class="nav-link-text ms-1">Data Master</span>
           </a>
         </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
-        </li>
+        @endif
+        @if(Auth::user()->level=="humas" ||Auth::user()->level=="admin" || Auth::user()->level=="kesiswaan"|| Auth::user()->level=="sapras"|| Auth::user()->level=="kurikulum")
         <li class="nav-item">
-          <a class="nav-link " href="../pages/profile.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+          <a class="nav-link" href="/galeri">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
             </div>
-            <span class="nav-link-text ms-1">Profile</span>
+            <span class="nav-link-text ms-1">Galeri</span>
           </a>
         </li>
+        @endif
+        @if(Auth::user()->level=="admin" || Auth::user()->level=="kesiswaan")
         <li class="nav-item">
-          <a class="nav-link " href="../pages/sign-in.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
+          <a class="nav-link   " href="/organisasi">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
             </div>
-            <span class="nav-link-text ms-1">Sign In</span>
+            <span class="nav-link-text ms-1">Organisasi</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/sign-up.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-collection text-info text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Sign Up</span>
-          </a>
-        </li>
+       @endif
       </ul>
     </div>
   </aside>
@@ -159,9 +166,9 @@
           </div>
           <ul class="navbar-nav  justify-content-end">
             <li class="nav-item d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white font-weight-bold px-0">
+              <a href="/logout" class="nav-link text-white font-weight-bold px-0">
                 <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign In</span>
+                <span class="d-sm-inline d-none">{{Auth::user()->name}}</span>
               </a>
             </li>
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">

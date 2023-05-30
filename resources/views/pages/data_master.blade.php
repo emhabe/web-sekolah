@@ -67,7 +67,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="/bkk">
+          <a class="nav-link  " href="/bkk">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
@@ -82,6 +82,7 @@
             <span class="nav-link-text ms-1">Manajemen</span>
           </a>
         </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="/jurusan">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
@@ -99,7 +100,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="/budaya_sekolah">
+          <a class="nav-link " href="/budaya_sekolah_admin">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-dark text-sm"></i>
             </div>
@@ -114,33 +115,23 @@
             <span class="nav-link-text ms-1">Data Master</span>
           </a>
         </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
-        </li>
         <li class="nav-item">
-          <a class="nav-link " href="../pages/profile.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+          <a class="nav-link   " href="/galeri">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
             </div>
-            <span class="nav-link-text ms-1">Profile</span>
+            <span class="nav-link-text ms-1">Galeri</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="../pages/sign-in.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
+          <a class="nav-link   " href="/organisasi">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
             </div>
-            <span class="nav-link-text ms-1">Sign In</span>
+            <span class="nav-link-text ms-1">Organisasi</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/sign-up.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-collection text-info text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Sign Up</span>
-          </a>
-        </li>
+       
       </ul>
     </div>
   </aside>
@@ -214,13 +205,7 @@
 </div><div class="col-lg-1 col-md-2 col-sm-3 col-4 text-center">
 <button onclick="ekskul()" class="avatar avatar-lg rounded-circle border  bg-gradient-primary">
 <i class="fas fa-plus text-white"></i>
-</button>
-<p class="mb-0 text-sm" style="margin-top:6px;">Ekskul</p>
-</div><div class="col-lg-1 col-md-2 col-sm-3 col-4 text-center">
-<button onclick="pengguna()" class="avatar avatar-lg rounded-circle border  bg-gradient-primary">
-<i class="fas fa-plus text-white"></i>
-</button>
-<p class="mb-0 text-sm" style="margin-top:6px;">Pengguna</p>
+</button><p class="mb-0 text-sm" style="margin-top:6px;">Pengguna</p>
 </div><div class="col-lg-1 col-md-2 col-sm-3 col-4 text-center">
 <button onclick="bkk()" class="avatar avatar-lg rounded-circle border  bg-gradient-primary">
 <i class="fas fa-plus text-white"></i>
@@ -593,89 +578,6 @@
         </div>
       </div>
     <!-- END TABEL Siswa -->
-    <!-- TABEL Ekskul -->
-    <div class="row" >
-        <div class="col-12">
-          <div class="card mb-4" id="ekskul" style="display: none;">
-            <div class="card-header pb-0">
-              <h6>Ekskul</h6>
-            </div>
-            <div class="card-body px-0 pt-0 pb-2">
-              <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0 "id="tabelekskul">
-                  <thead>
-                    <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employed</th>
-                      <th class="text-center text-secondary opacity-7">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">John Michael</h6>
-                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Manager</p>
-                        <p class="text-xs text-secondary mb-0">Organization</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
-                      </td>
-                      <td class="align-middle text-center">
-                         <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i class="far fa-trash-alt me-2"></i>Delete</a>
-                         <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user2">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Alexa Liras</h6>
-                            <p class="text-xs text-secondary mb-0">alexa@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">11/01/19</span>
-                      </td>
-                      <td class="align-middle text-center">
-                         <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i class="far fa-trash-alt me-2"></i>Delete</a>
-                         <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
-                      </td>
-                    </tr>
-                  
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- END TABEL Ekskul  -->
     <!-- TABEL Pengguna -->
     <div class="row" >
         <div class="col-12">
@@ -1183,7 +1085,7 @@
             </div>
             <div class="card-body px-0 pt-0 pb-2">
               <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0" id="tabeltoitei">
+                <table class="table align-items-center mb-0 "id="tabeltoitei">
                   <thead>
                     <tr>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
@@ -1340,6 +1242,7 @@
         </div>
       </div>
     <!-- END TABEL TKR TBSM -->
+</div>
       <footer class="footer pt-3  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">

@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\LoginController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -44,19 +46,78 @@ Route::get('/teknik_komputer_jaringan',[LandingController::class,'teknik_kompute
 Route::get('/rekayasa_perangkat_lunak',[LandingController::class,'rekayasa_perangkat_lunak']);
 Route::get('/mitra_kerja',[LandingController::class,'mitra_kerja']);
 // Tampilan Admin
-Route::get('/dashboard',[AdminController::class,'dashboard']);
-Route::get('/detail_bkk',[AdminController::class,'detail_bkk']);
-Route::get('/detail_mitra',[AdminController::class,'detail_mitra']);
-Route::get('/kategori_bkk',[AdminController::class,'kategori_bkk']);
-Route::get('/manajemen',[AdminController::class,'manajemen']);
-Route::get('/bkk',[AdminController::class,'bkk']);
-Route::get('/pgri',[AdminController::class,'pgri']);
-Route::get('/profile',[AdminController::class,'profile']);
-Route::get('/jurusan',[AdminController::class,'jurusan']);
-Route::get('/berita',[AdminController::class,'berita']);
-Route::get('/budaya_sekolah',[AdminController::class,'budaya_sekolah']);
-Route::get('/data_master',[AdminController::class,'data_master']);
-Route::get('/galeri',[AdminController::class,'galeri']);
-Route::get('/kegiatan',[AdminController::class,'kegiatan']);
-Route::get('/fasilitas',[AdminController::class,'fasilitas']);
-
+Route::group(['middleware' => ['auth','role:admin']], function () {
+    Route::get('/detail_bkk_admin',[AdminController::class,'detail_bkk_admin']);
+    Route::get('/detail_mitra',[AdminController::class,'detail_mitra']);
+    Route::get('/kategori_bkk',[AdminController::class,'kategori_bkk']);
+    Route::get('/manajemen',[AdminController::class,'manajemen']);
+    Route::get('/bkk',[AdminController::class,'bkk']);
+    Route::get('/pgri',[AdminController::class,'pgri']);
+    Route::get('/profile',[AdminController::class,'profile']);
+    Route::get('/jurusan',[AdminController::class,'jurusan']);
+    Route::get('/berita',[AdminController::class,'berita']);
+    Route::get('/budaya_sekolah_admin',[AdminController::class,'budaya_sekolah_admin']);
+    Route::get('/data_master',[AdminController::class,'data_master']);
+    Route::get('/galeri',[AdminController::class,'galeri']);
+    Route::get('/kegiatan',[AdminController::class,'kegiatan']);
+    Route::get('/fasilitas',[AdminController::class,'fasilitas']);
+    Route::get('/tei',[AdminController::class,'tei']);
+    Route::get('/tkj',[AdminController::class,'tkj']);
+    Route::get('/tbsm',[AdminController::class,'tbsm']);
+    Route::get('/tkr',[AdminController::class,'tkr']);
+    Route::get('/toi',[AdminController::class,'toi']);
+    Route::get('/rpl',[AdminController::class,'rpl']);
+    Route::get('/organisasi',[AdminController::class,'organisasi']);
+});
+//Tampilan Login Register
+Route::get('/login',[LoginController::class,'login'])->name('login')->middleware('guest');
+Route::get('/logout',[LoginController::class,'logout']);
+Route::get('/register',[LoginController::class,'register']);
+Route::post('/proses_login',[LoginController::class,'proses_login']);
+//DASHBOARD
+Route::group(['middleware' => ['auth','role:admin,humas,kesiswaan,bkk,sapras,kurikulum,rpl,tkj,toi,tei,tkr,tbsm']], function () {
+    Route::get('/dashboard',[AdminController::class,'dashboard'])->name('dashboard');
+});
+//humas
+Route::group(['middleware' => ['auth','role:admin,humas']], function () {
+    Route::get('/bkk',[AdminController::class,'bkk']);
+    Route::get('/kategori_bkk',[AdminController::class,'kategori_bkk']);
+    Route::get('/detail_bkk_admin',[AdminController::class,'detail_bkk_admin']);
+    Route::get('/detail_mitra',[AdminController::class,'detail_mitra']);
+    Route::get('/berita',[AdminController::class,'berita']);
+    Route::get('/budaya_sekolah_admin',[AdminController::class,'budaya_sekolah_admin']);
+    Route::get('/galeri',[AdminController::class,'galeri']);
+    Route::get('/kegiatan',[AdminController::class,'kegiatan']);
+    Route::get('/fasilitas',[AdminController::class,'fasilitas']);
+    Route::get('/berita',[AdminController::class,'berita']);
+});
+//bkk
+Route::group(['middleware' => ['auth','role:admin,bkk,humas']], function () {
+    Route::get('/bkk',[AdminController::class,'bkk']);
+    Route::get('/detail_bkk_admin',[AdminController::class,'detail_bkk_admin']);
+    Route::get('/detail_mitra',[AdminController::class,'detail_mitra']);
+});
+//kesiswaan 
+Route::group(['middleware' => ['auth','role:admin,kesiswaan']], function () {
+    Route::get('/berita',[AdminController::class,'berita']);
+    Route::get('/galeri',[AdminController::class,'galeri']);
+    Route::get('/organisasi',[AdminController::class,'organisasi']);
+    Route::get('/kegiatan',[AdminController::class,'kegiatan']);
+    Route::get('/fasilitas',[AdminController::class,'fasilitas']);
+});
+//sapras
+Route::group(['middleware' => ['auth','role:admin,sapras']], function () {
+    Route::get('/fasilitas',[AdminController::class,'fasilitas']);
+    Route::get('/berita',[AdminController::class,'berita']);
+    Route::get('/galeri',[AdminController::class,'galeri']);
+});
+//kurikulum
+Route::group(['middleware' => ['auth','role:admin,kurikulum']], function () {
+    Route::get('/berita',[AdminController::class,'berita']);
+    Route::get('/galeri',[AdminController::class,'galeri']);
+    Route::get('/fasilitas',[AdminController::class,'fasilitas']);
+    Route::get('/kegiatan',[AdminController::class,'kegiatan']);
+    Route::get('/bkk',[AdminController::class,'bkk']);
+    Route::get('/detail_bkk_admin',[AdminController::class,'detail_bkk_admin']);
+    Route::get('/detail_mitra',[AdminController::class,'detail_mitra']);
+});

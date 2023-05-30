@@ -9,8 +9,8 @@ class AdminController extends Controller
     public function dashboard(){
         return view('pages.dashboard');
     }
-    public function detail_bkk(){
-        return view('pages.detail_bkk');
+    public function detail_bkk_admin(){
+        return view('pages.detail_bkk_admin');
     }
     public function detail_mitra(){
         return view('pages.detail_mitra');
@@ -36,8 +36,8 @@ class AdminController extends Controller
     public function berita(){
         return view('pages.berita');
     }
-    public function budaya_sekolah(){
-        return view('pages.budaya_sekolah');
+    public function budaya_sekolah_admin(){
+        return view('pages.budaya_sekolah_admin');
     }
     public function data_master(){
         return view('pages.data_master');
@@ -56,5 +56,26 @@ class AdminController extends Controller
     }
     public function kategori_fasilitas(){
         return view('pages.kategori_fasilitas');
+    }
+    public function tei(){
+        return view('pages.tei');
+    }
+    public function tkj(){
+        return view('pages.tkj');
+    }
+    public function tbsm(){
+        return view('pages.tbsm');
+    }
+    public function tkr(){
+        return view('pages.tkr');
+    }
+    public function toi(){
+        return view('pages.toi');
+    }
+    public function rpl(){
+        return view('pages.rpl');
+    }
+    public function organisasi(){
+        return view('pages.organisasi');
     }
 }

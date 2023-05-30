@@ -65,7 +65,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active " href="/bkk">
+          <a class="nav-link  " href="/bkk">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
@@ -80,6 +80,7 @@
             <span class="nav-link-text ms-1">Manajemen</span>
           </a>
         </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="/jurusan">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
@@ -97,7 +98,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="/budaya_sekolah">
+          <a class="nav-link " href="/budaya_sekolah_admin">
             <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-dark text-sm"></i>
             </div>
@@ -112,33 +113,23 @@
             <span class="nav-link-text ms-1">Data Master</span>
           </a>
         </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
-        </li>
         <li class="nav-item">
-          <a class="nav-link " href="../pages/profile.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+          <a class="nav-link  active " href="/galeri">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
             </div>
-            <span class="nav-link-text ms-1">Profile</span>
+            <span class="nav-link-text ms-1">Galeri</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="../pages/sign-in.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
+          <a class="nav-link   " href="/organisasi">
+            <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-dark text-sm"></i>
             </div>
-            <span class="nav-link-text ms-1">Sign In</span>
+            <span class="nav-link-text ms-1">Organisasi</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../pages/sign-up.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-collection text-info text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Sign Up</span>
-          </a>
-        </li>
+       
       </ul>
     </div>
   </aside>
